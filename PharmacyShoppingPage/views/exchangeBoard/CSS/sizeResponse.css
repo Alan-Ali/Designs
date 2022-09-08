@@ -65,4 +65,8 @@
         margin-top: 10px !important;
     }
 
+    .resize-top-bar-buttons{
+        width:250px;
+    }
+
 }
