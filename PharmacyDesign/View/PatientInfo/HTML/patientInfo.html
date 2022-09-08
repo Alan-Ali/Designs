@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="../../../node_modules/@mdi/font/css/materialdesignicons.css">
+    <link rel="stylesheet" href="../CSS/patientInfo.css">
+</head>
+<body class="d-flex justify-content-center align-items-center p-1 h-100 m-top-10-px">
+    <form class="container-fluid w-95 rounded d-flex justify-content-center align-items-center h-100 p-4 " method="post" >
+        <!-- <legend class="">Patient Info</legend> -->
+        <div class="row d-flex justify-content-start align-items-start w-70 border rounded rounded-1 position-relative ">
+            <div class="form-topic font-s-2 p-1 d-flex justify-content-center align-content-center" >
+                Patient Info
+            </div>
+            <div class="col-6 d-flex justify-content-start align-items-start flex-column ">
+                <div class="w-100 m-top-10-px">
+                    <label for="chief-complient" class="form-label form-text font-s-2">Chief complient</label>
+                    <input type="text" class="form-control" name="chiefcomplient" id="chief-complient" aria-describedby="Chief complient" placeholder="Reason...">
+                    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                  </div>
+                  <div class="w-100 m-top-15-px ">
+                    <label for="h-o-p" class="form-label form-text font-s-2">H.O.P</label>
+                    <textarea class="form-control" id="h-o-p" rows="3"></textarea>
+                  </div>
+                  <div id="chronic-disease" class="w-100 d-flex  font-s-2 justify-content-start align-items-center flex-column m-top-15-px  border rounded p-2">
+                        <div class="form-text w-100 d-flex justify-content-start align-items-center ">
+                            Chronic Disease
+                        </div>
+                        <div class="row w-100 d-flex justify-content-around align-items-center flex-row">
+                        
+                            <div class="form-check d-flex justify-content-between m-0 align-items-center  w-25 ">
+                              <div class="">
+                              
+                                <input class="form-check-input m-0 p-0" type="radio" name="chronicdisease" id="chronic-disease-yes" value="Yes">
+                              
+                              </div>
+                                
+                                <label class="form-check-label  m-0 p-0" for="chronic-disease-yes">Yes</label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between align-items-center w-25">
+                              
+                              <div class="">
+                                    <input class="form-check-input m-0 p-0" type="radio" name="chronicdisease" id="chronic-disease-no" value="No" checked>
+                              </div>
+                              
+                              <label class="form-check-label m-0 p-0" for="chronic-disease-no">No</label>
+                            </div>
+                        </div>
+
+                  </div>
+                  <div id="social-history" style="margin-bottom: 15px;" class="w-100 d-flex  font-s-2 justify-content-start align-items-center flex-column m-top-15-px border rounded p-2">
+                    <div class="form-text w-100 d-flex justify-content-start align-items-center ">
+                        Social history
+                    </div>
+                    <div class="row w-100 d-flex justify-content-around align-items-center flex-row">
+                    
+                        <div class="form-check d-flex justify-content-between m-0 align-items-center  w-25 ">
+                          <div class="">
+                                       <input class="form-check-input m-0 p-0" type="radio" name="socialhistory" id="social-history-yes" value="Yes">
+                          </div>
+               
+                            <label class="form-check-label  m-0 p-0" for="social-history-yes">Yes</label>
+                          </div>
+                          <div class="form-check d-flex justify-content-between align-items-center  w-25">
+                            <div class="">
+                              <input class="form-check-input m-0 p-0" type="radio" name="socialhistory" id="social-history-no" value="No" checked>
+                            </div>
+                            <label class="form-check-label m-0 p-0" for="social-history-no">No</label>
+                          </div>
+                    </div>
+                  </div>
+                  
+                  <div id="drugs-allergy" style="margin-bottom: 15px;" class="w-100 d-flex  font-s-2 justify-content-start align-items-center flex-column m-top-15-px border rounded p-2">
+                    <div class="form-text w-100 d-flex justify-content-start align-items-center ">
+                        Drugs Allergy
+                    </div>
+                    <div class="row w-100 d-flex justify-content-around align-items-center flex-row">
+                    
+                        <div class="form-check d-flex justify-content-between m-0 align-items-center  w-25 ">
+                          <div class="">
+                            <input class="form-check-input m-0 p-0" type="radio" name="drugsallergy" id="drugs-allergy-yes" value="Yes">
+                          </div>
+                            <label class="form-check-label  m-0 p-0" for="drugs-allergy-yes">Yes</label>
+                          </div>
+                          <div class="form-check d-flex justify-content-between align-items-center  w-25">
+                            <div class="">
+                              <input class="form-check-input m-0 p-0" type="radio" name="drugsallergy" id="drugs-allergy-no" value="No" checked>
+                            </div>
+                            <label class="form-check-label m-0 p-0" for="drugs-allergy-no">No</label>
+                          </div>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col-6 d-flex justify-content-start align-items-start flex-column">
+                  <!-- <div class="w-100 m-top-10-px">
+                      <label for="duration" class="form-label form-text font-s-2">Duration</label>
+                      <input type="text" class="form-control" id="duration" aria-describedby="duration" placeholder="Reason...">
+                  </div> -->
+                  <label for="duration" class="form-label form-text font-s-2 m-top-15-px">Duration</label>                  
+                  <div class="input-group w-100 ">
+                    <input type="text" id="duration" class="form-control w-75" >
+                    <select class="form-select w-20" id="duration-select">
+                      <option  value="" selected>Choose...</option>
+                      <option value="Day">Day</option>
+                      <option value="Week">Week</option>
+                      <option value="Month">Month</option>
+                      <option value="Year">Year</option>
+                    </select>
+                  </div>
+                  <div id="past-surgery" class="position-relative w-100 d-flex z-10 font-s-2 justify-content-start align-items-center flex-column m-top-15-px border rounded p-2">
+                    <div class="form-text w-100 d-flex justify-content-start align-items-center ">
+                        Past Surgery
+                    </div>
+                    <div class="row w-100 d-flex justify-content-around align-items-center flex-row">
+                    
+                          <div class="form-check d-flex justify-content-between m-0 align-items-center  w-25 ">
+                            <div class=>
+                              <input class="form-check-input m-0 p-0" type="radio" name="pastsurgery" id="past-surgery-yes" value="Yes">
+                            </div>
+                            <label class="form-check-label  m-0 p-0" for="past-surgery-yes">Yes</label>
+                          </div>
+                          <div class="form-check d-flex justify-content-between align-items-center w-25">
+                            <div class=>
+                              <input class="form-check-input m-0 p-0" type="radio" name="pastsurgery" id="past-surgery-no" value="No" checked>
+                            </div>
+                            <label class="form-check-label m-0 p-0" for="past-surgery-no">No</label>
+                          </div>
+                          
+                    </div>
+                    
+
+              
+                  </div>
+                  <div id="family-history" class="w-100 d-flex  font-s-2 justify-content-start align-items-center flex-column m-top-15-px  border rounded p-2">
+                    <div class="form-text w-100 d-flex justify-content-start align-items-center ">
+                        Family history
+                    </div>
+                    <div class="row w-100 d-flex justify-content-around align-items-center flex-row">
+                    
+                          <div class="form-check d-flex justify-content-between m-0 align-items-center  w-25 ">
+                              <div class="">
+                                <input class="form-check-input m-0 p-0 " type="radio" name="familyhistory" id="family-history-yes" value="Yes">
+                              </div>
+                              <label class="form-check-label  m-0 p-0" for="family-history-yes">Yes</label>
+                          </div>
+                          <div class="form-check d-flex justify-content-between align-items-center w-25">
+                            <div class="">
+                              <input class="form-check-input m-0 p-0" type="radio" name="familyhistory" id="family-history-no" value="No" checked>
+                              
+                            </div>
+                            <label class="form-check-label m-0 p-0" for="family-history-no">No</label>
+                          
+                          </div>
+                    </div>
+                  </div>
+                  <div class="w-100 m-bottom-15-px">
+                    <label for="next-appointment" class="form-label form-text font-s-2">Next Appointment </label>
+                    <input type="date" class="form-control m-bottom-10-px" id="next-appointment" aria-describedby="" >
+                    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                  </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+<script type="module" src="../JS/patientInfo.js"></script>
+</html>

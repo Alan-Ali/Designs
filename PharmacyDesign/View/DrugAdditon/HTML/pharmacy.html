@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="../../../node_modules/@mdi/font/css/materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/pharmacy.css">
+</head>
+<body class="p-1">
+    
+    <div class=" container-fluid h-100 d-flex justify-content-center align-items-center flex-column p-1">
+            <div class="row row-1 rounded-top col-12 d-flex justify-content-center align-items-center color-white flex-row test-bg-color position-relative">
+                <!-- <button class="btn btn-primary "></button> -->
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="mdi mdi-pill-multiple w-5 font-s-1 d-flex justify-content-center align-items-center color-white" ></div>
+                    <h3 class=" d-flex justify-content-center align-items-center p-1 m-0 w-20 font-s-1">  Drug Addition</h3>
+
+                </div>
+                <div class="row col-11 d-flex justify-content-center align-items-center p-2 ">
+                    The basic information about the drug will be added here and will be used later in the trade
+                </div>
+            </div>
+
+            <div class="row row-2 col-12 border rounded-bottom  p-2 d-flex justify-content-around align-items-center">
+                <div class="col-7 d-flex justify-content-around align-items-center flex-column">
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row ">
+
+<!--                        <div class="cur-pointer font-s-2 col-1 mdi mdi-beaker-question-outline d-flex justify-content-around align-items-center d-inline-block"-->
+<!--                             data-bs-toggle="tooltip" data-bs-placement="top" title="Select the type of drug">-->
+
+<!--                        </div>-->
+                        <label for="typeofdrug" class="form-label h-100 w-20 d-flex justify-content-start align-items-center">Type of drug </label>
+                        <select id="typeofdrug" class="col-4 form-select form-select-md w-90" aria-label=".form-select-sm p-1 ">
+                            <option selected>Type of drug</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row ">
+
+<!--                        <div class="cur-pointer font-s-2 col-1 mdi mdi-domain d-flex justify-content-around align-items-center"-->
+<!--                             data-bs-toggle="tooltip" data-bs-placement="top" title="The name of the drug that is prescribed in business">-->
+
+<!--                        </div>-->
+                        <label for="exampleFormControlInput1" class="form-label h-100  w-90 d-flex justify-content-start align-items-center">Trade name of the drug</label>
+                        <input type="email" class="form-control w-90" id="exampleFormControlInput1" placeholder="Drug's trade name">
+
+                    </div>
+
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row">
+
+<!--                        <div class="cur-pointer font-s-2 col-1 mdi mdi-atom-variant d-flex justify-content-around align-items-center"-->
+<!--                             data-bs-toggle="tooltip" data-bs-placement="top" title="The name of the drug that is prescribed in science">-->
+
+<!--                        </div>-->
+                        <label for="exampleFormControlInput1" class="form-label w-90 d-flex justify-content-start align-items-center">The scientific name of the drug</label>
+                        <input type="email" class="form-control w-90" id="exampleFormControlInput1" placeholder="Drug's scientific name">
+
+                    </div>
+
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row">
+
+<!--                        <div class="cur-pointer font-s-2 col-1 mdi mdi-barcode-scan d-flex justify-content-around align-items-center"-->
+<!--                             data-bs-toggle="tooltip" data-bs-placement="top" title="Code of the bar that is on the drug">-->
+
+<!--                        </div>-->
+
+                        <label for="exampleFormControlInput1" class="form-label w-90 d-flex justify-content-start align-items-center">Bar code of the drug</label>
+                        <input type="email" class="form-control w-90" id="exampleFormControlInput1" placeholder="Bar code">
+
+                    </div>
+
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row">
+
+<!--                        <div class="cur-pointer font-s-2 col-1  mdi mdi-package-variant-closed d-flex justify-content-around align-items-center"-->
+<!--                             data-bs-toggle="tooltip" data-bs-placement="top" title="The amount of the element in the package"></div>-->
+
+                        <label for="exampleFormControlInput1" class="form-label w-90 ">Amount Contained</label>
+                        <select class="col-4 form-select form-select-md w-90" aria-label=".form-select-sm p-1 ">
+                            <option selected>Amount Contained</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row">
+<!--  mdi mdi-domain -->
+<!--                        <div class="cur-pointer font-s-2 col-1 bi bi-box-arrow-in-down d-flex justify-content-around align-items-center"-->
+<!--                             data-bs-toggle="tooltip" data-bs-placement="top" title="The amount">-->
+
+<!--                        </div>-->
+
+                        <label for="exampleFormControlInput1" class="form-label w-90 d-flex justify-content-start align-items-center">Volume of the container</label>
+                        <input type="email" class="form-control w-90" id="exampleFormControlInput1" placeholder="Container volume">
+
+                    </div>
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row">
+
+<!--                        <div class="cur-pointer font-s-2 col-1 bi bi-collection  d-flex justify-content-around align-items-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top "></div>-->
+
+                        <label for="exampleFormControlInput1" class="form-label w-90 d-flex justify-content-start align-items-center">Amount</label>
+                        <select class="col-4 form-select form-select-md w-90" aria-label=".form-select-sm p-1 ">
+                            <option selected>Amount</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row">
+
+<!--                        <div class="cur-pointer font-s-2 col-1 mdi mdi-package-variant-plus d-flex justify-content-around align-items-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top ">-->
+
+<!--                        </div>-->
+
+                        <label for="exampleFormControlInput1" class="form-label w-90 d-flex justify-content-start align-items-center">Amount Available warning</label>
+                        <input type="number" class="form-control w-90" id="exampleFormControlInput1" placeholder="Amount available warning">
+
+                    </div>
+
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row">
+
+<!--                        <div class="cur-pointer font-s-2 col-1 mdi mdi-package-variant-plus d-flex justify-content-around align-items-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top ">-->
+
+<!--                        </div>-->
+
+                        <label for="exampleFormControlInput1" class="form-label w-90 d-flex justify-content-start align-items-center">Country</label>
+                        <input type="number" class="form-control w-90" id="exampleFormControlInput1" placeholder="Country">
+
+                    </div>
+                    <div class="row w-100 d-flex justify-content-start align-items-center p-2 flex-row">
+
+<!--                        <div class="cur-pointer font-s-2 col-1 mdi mdi-file-outline d-flex justify-content-around align-items-center"-->
+<!--                             data-bs-toggle="tooltip" data-bs-placement="top" title="Chose the file of the drug">-->
+
+<!--                        </div>-->
+
+                        <label for="exampleFormControlInput1" class="form-label w-90 d-flex justify-content-start align-items-center">File</label>
+                        <input type="file" class="form-control w-90" id="exampleFormControlInput1" placeholder="name@example.com">
+
+                    </div>
+
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+<!--        <div class="row row-3 rounded-bottom col-12 d-flex justify-content-center align-items-center color-white flex-row bg-color-blue-purple">-->
+<!--            <div class="row d-flex justify-content-center align-items-center">-->
+<!--                <div class="font-s-2 mdi mdi-pill-multiple w-5 font-s-1 d-flex justify-content-center align-items-center color-white" ></div>-->
+<!--                <h3 class=" d-flex justify-content-center align-items-center p-1 m-0 w-20 font-s-1">  drug Addition</h3>-->
+
+<!--            </div>-->
+<!--            <div class="row col-11 d-flex justify-content-center align-items-center p-2 ">-->
+<!--                The basic information about the drug will be added here and will be used later in the trade-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+
+</body>
+<script type="module" src="../JS/pharmacy.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/bootstrap/js/dist/popover.js"></script>
+
+</html>

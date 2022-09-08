@@ -1,0 +1,68 @@
+.top-bar-icon{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+@media  screen and (max-width: 900px) and (min-width: 400px){
+    .top-bar-info{
+
+        border-radius: 5px !important  ;
+    }
+    .top-bar-icon{
+        /* border-bottom-right-radius: 50px ;
+        border-top-right-radius: 50px;
+        
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px; */
+        display: none !important;
+    }
+
+    .column-shaped {
+        /* flex-wrap: nowrap !important; */
+        /* padding: 0; */
+        /* border: 2px solid red !important; */
+        flex-direction: column-reverse !important;
+        /* justify-content: start !important; */
+        /* align-items: start !important; */
+        /* align-content: flex-end !important; */
+        /* width: 100% */
+    }
+
+    .column-width{
+        width: 100% !important;
+    }
+
+    .row-shaped{
+        width: 100% !important;
+        flex-direction: row !important;
+    }
+
+
+    .giving-instructions{
+        /* flex-wrap: nowrap !important; */
+        padding: 0;
+        /* border: 2px solid red !important; */
+        /* flex-direction: column-reverse !important; */
+        justify-content: flex-end !important;
+        align-items: end !important;
+        align-content: flex-end !important;
+        /* width: 100% */
+    }
+    .full-size{
+        margin-top: 15px ;
+        width: 100% !important;
+    }
+
+    .resize-w{
+        width: 40% !important;
+        
+    }
+
+    .resize-top-bar{
+        width: 100%;
+    }
+    .resize-top-margin{
+        margin-top: 10px !important;
+    }
+
+}
