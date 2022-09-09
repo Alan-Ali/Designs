@@ -29,3 +29,53 @@ input[type="date"]{
 .bg-dim-white{
     background-color: #F8F8FA;
 }
+
+
+
+.cust-bg-primary{
+    background-color: #79B2EC;
+}
+
+.cust-bg-secondary{
+    background-color: #79B160;
+}
+
+.cust-bg-tertiary{
+    background-color: #EFC670;
+}
+
+
+.cust-b-primary{
+    border-color: #79B2EC;
+}
+
+.cust-b-secondary{
+    border-color: #79B160;
+}
+
+.cust-b-tertiary{
+    border-color: #EFC670;
+}
+
+
+.cust-text-primary{
+    color: #79B2EC;
+}
+
+.cust-text-secondary{
+    color: #79B160;
+}
+
+.cust-text-tertiary{
+    color: #EFC670;
+}
+
+
+.blue-buttons{
+    outline: none;
+    
+}
+
+.blue-buttons:hover{
+    background-color: #79B2EC;
+}

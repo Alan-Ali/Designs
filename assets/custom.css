@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: myFirstFont;
-    src: url('../../../../fonts/Rabar_044/Rabar_044.woff');
+    src: url('../fonts/Rabar_044/Rabar_044.woff');
 }
 body{
     font-family: myFirstFont;
@@ -24,7 +24,12 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+/* 
 textarea{
+    resize:none
+} */
+
+.textarea-resize-none{
     resize:none
 }
 
@@ -423,6 +428,132 @@ textarea{
 }
 
 
+.m-right-1-px{
+    margin-right: 1px;
+}
+
+.m-right-2-px{
+    margin-right: 2px;
+}
+
+.m-right-3-px{
+    margin-right: 3px;
+}
+
+.m-right-4-px{
+    margin-right: 4px;
+}
+
+.m-right-5-px{
+    margin-right: 5px;
+}
+
+
+.m-right-6-px{
+    margin-right: 6px;
+}
+
+.m-right-7-px{
+    margin-right: 7px;
+}
+
+.m-right-8-px{
+    margin-right: 8px;
+}
+
+.m-right-9-px{
+    margin-right: 9px;
+}
+
+.m-right-10-px{
+    margin-right: 10px;
+}
+
+.m-right-11-px{
+    margin-right: 11px;
+}
+
+.m-right-12-px{
+    margin-right: 12px;
+}
+
+.m-right-13-px{
+    margin-right: 13px;
+}
+
+.m-right-14-px{
+    margin-right: 14px;
+}
+
+.m-right-15-px{
+    margin-right: 15px;
+}
+
+
+.m-left-1-px{
+    margin-left: 1px;
+}
+
+.m-left-2-px{
+    margin-left: 2px;
+}
+
+.m-left-3-px{
+    margin-left: 3px;
+}
+
+.m-left-4-px{
+    margin-left: 4px;
+}
+
+.m-left-5-px{
+    margin-left: 5px;
+}
+
+
+.m-left-6-px{
+    margin-left: 6px;
+}
+
+.m-left-7-px{
+    margin-left: 7px;
+}
+
+.m-left-8-px{
+    margin-left: 8px;
+}
+
+.m-left-9-px{
+    margin-left: 9px;
+}
+
+.m-left-10-px{
+    margin-left: 10px;
+}
+
+.m-left-11-px{
+    margin-left: 11px;
+}
+
+.m-left-12-px{
+    margin-left: 12px;
+}
+
+.m-left-13-px{
+    margin-left: 13px;
+}
+
+.m-left-14-px{
+    margin-left: 14px;
+}
+
+.m-left-15-px{
+    margin-left: 15px;
+}
+
+
+
+
 
 
 .font-s-1{
@@ -518,6 +649,9 @@ textarea{
 }
 .w-40{
     width: 40%;
+}
+.w-45{
+    width: 45%;
 }
 .w-60{
     width: 60%;
