@@ -12,51 +12,66 @@
     <link rel="stylesheet" href="../CSS/exchangeBoard.css">
     <link rel="stylesheet" href="../CSS/sizeResponse.css">
 </head>
-<body class="h-100 p-1">
+<body style="background-color: #f3f3f3" class="h-100 p-1">
     <div class="container-fluid d-flex justify-content-around align-items-start h-100 w-100 rounded p-3 column-shaped" >
-        <div class="col-2 h-100 border m-1 d-flex justify-content-center align-items-center flex-column rounded rounded-3 row-shaped box-shadow-1">
-            <div class="d-flex justify-content-center align-items-center flex-column w-100">
-                <button type="button" class="btn btn-secondary w-75 m-2 rounded-5">5000</button>
-                <button type="button" class="btn btn-secondary w-75 m-2 rounded-5">10000</button>
-                <button type="button" class="btn btn-secondary w-75 m-2 rounded-5">25000</button>
-                <button type="button" class="btn btn-secondary w-75 m-2 rounded-5">50000</button>
-            </div>
-            <div class="d-flex justify-content-center align-items-center flex-column w-100">
-                <button type="button" class="btn btn-warning w-75 m-2 rounded-5">20$</button>
-                <button type="button" class="btn btn-warning w-75 m-2 rounded-5">50$</button>
-                
-                <button type="button" class="btn btn-warning w-75 m-2 rounded-5">100$</button>
-
-                            <div class="input-group w-75 m-3 ">
-                    <select class="form-select w-50 selectpicker" id="inputGroupSelect04" aria-label="Example select with button addon">
-                    <option value="" selected  class="direction-rtl">هەڵبژاردن</option>
-                    <option value="Dollar" class="direction-rtl">دۆلار</option>
-                    <option value="Dinar" class="direction-rtl">دینار</option>
-                    </select>
-                    <input type="text" class="form-control w-50" aria-label="Text input with segmented dropdown button">
+        <div class="col-2 h-100 m-1 d-flex justify-content-center align-items-center rounded-bottom flex-column row-shaped box-shadow-1 overflow-hidden">
+            <div class="mx-0 w-100 d-flex justify-content-center align-items-center flex-column ">
+                <div class="row d-flex w-100 justify-content-center align-items-center flex-row cust-bg-primary rounded-top p-1 mx-0 part-1">
+                    <button style="background: rgb(247, 230, 73)" type="button" class="btn btn-light border-0 text-dark w-75 m-2 rounded-5 font-s-2 ">5000  IQD</button>
+                    <button style="background: rgb(247, 230, 73)" type="button" class="btn w-75 m-2 text-dark border-0 rounded-5 font-s-2">10000 IQD</button>
+                    <button style="background: rgb(247, 230, 73)" type="button" class="btn w-75 m-2 text-dark border-0 rounded-5 font-s-2">25000 IQD</button>
+                    <button style="background: rgb(247, 230, 73)" type="button" class="btn w-75 m-2 text-dark border-0 rounded-5 font-s-2">50000 IQD</button>
+                </div>
+                <div class=" d-flex justify-content-center w-100 align-items-center flex-column cust-bg-primary rounded-bottom p-1 mx-0  part-1">
+                    <button style="background: #ccecff" type="button" class="btn border-0 w-75 m-2 rounded-5 font-s-2">20 $</button>
+                    <button style="background: #ccecff" type="button" class="btn border-0 w-75 m-2 rounded-5 font-s-2">50 $</button>
+                    
+                    <button style="background: #ccecff" type="button" class="btn border-0 w-75 m-2 rounded-5 font-s-2">100 $</button>
+                                  <!-- <div class="input-group w-75 m-3 ">
+                        <select class="form-select w-50 selectpicker" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option value="" selected  class="direction-rtl">هەڵبژاردن</option>
+                        <option value="Dollar" class="direction-rtl">دۆلار</option>
+                        <option value="Dinar" class="direction-rtl">دینار</option>
+                        </select>
+                        <input type="text" class="form-control w-50" aria-label="Text input with segmented dropdown button">
+                    </div> -->
                 </div>
             </div>
+
+
+
+            <div class="row d-flex justify-content-center align-items-center flex-column w-100 rounded-bottom p-1 font-s-2 bg-white">
+                <div class="w-100 d-flex justify-content-center align-items-center">
+                    نرخ بە دۆللار
+                </div>
+                <div class="p-1 w-100 d-flex justify-content-center align-items-center ">
+                    <div class="w-80 border d-flex justify-content-center align-items-center border-1 cust-bg-secondary text-white rounded-4">
+                        1.80
+                    </div>
+                </div>
+
             </div>
+        </div>
 
         <div class="col-10 p-2 d-flex justify-content-start align-content-center flex-column column-width">
 
             <div class="row  w-100 m-0 p-0 d-flex justify-content-center align-items-start flex-row  overflow-hidden">
             <!-- patient part -->
             <div class="col-6 font-s-2 ">
-                <div class="row border border-1  rounded rounded-2 overflow-hidden box-shadow-1">
+                <div class="row border border-1 m-bottom-10-px rounded rounded-2 overflow-hidden box-shadow-1">
                     <div class="row cust-bg-primary mx-0 direction-rtl p-3 d-flex justify-content-around align-items-center rounded-bottom rounded-2">
                         <div class="row d-flex justify-content-between align-items-start flex-row w-100 border-2 p-0">
-                            <input type="number" class="form-control font-s-2 w-45 border-0 rounded-1 m-right-10-px" id="" placeholder="واسڵ...">
-                            <input type="number" class="form-control font-s-2 w-45 border-0 rounded-1 m-left-10-px" id="" placeholder="داشکاندن...">
+                            <input type="number" class="form-control font-s-2 w-50 border-0 rounded-1 m-bottom-9-px" id="" placeholder="واسڵ...">
+                            <input type="number" class="form-control font-s-2 w-45 border-0 rounded-1 " id="" placeholder="داشکاندن...">
     
-                            <input type="number" class="form-control font-s-2 w-45 m-top-10-px border-0 rounded-1 align-self-baseline m-right-10-px" id="" placeholder="قەرز...">
+                            <input type="number" class="form-control font-s-2 w-50 m-top-10-px border-0 rounded-1 align-self-baseline " id="" placeholder="قەرز...">
                             
                         </div>
-   
-                        <div class="form-control font-s-1 w-100 m-top-10-px cust-b-tertiary bg-transparent border border-1 cust-text-tertiary rounded-1 d-flex justify-content-center align-items-center" id="" >234234</div>
-                        
+                       
+                        <div class="form-control font-s-1 w-100 m-top-15-px p-2 cust-b-tertiary bg-white border border-1 cust-text-tertiary rounded-1 d-flex justify-content-center align-items-center" id="" >234234</div>
+                
                     </div>
-                    <div class="row d-flex justify-content-around align-items-center p-2 h-50">
+                    <div class="row d-flex justify-content-around align-items-center p-2 h-50 bg-white mx-0">
                         <button class="btn-first-half d-flex justify-content-center align-items-center w-30 h-400-px p-0 mx-0 m-1 overflow-hidden rounded rounded-5">
                             <div class="d-flex justify-content-center w-80 align-items-center  font-s-2">گەڕاوە لە فرۆشتن</div>
                             <div class="mdi mdi-redo-variant font-s-2 w-20"></div>
@@ -70,7 +85,7 @@
             </div>
                 <!-- prices part -->
                 <div class="col-6 overflow-hidden  font-s-2 ">
-                    <div class="row border border-1 mx-0 rounded rounded-2 overflow-hidden box-shadow-1 m-bottom-15-px">
+                    <div class="row border border-1 mx-0 rounded rounded-2 overflow-hidden box-shadow-1 m-bottom-10-px">
                         <div class="row cust-bg-primary mx-0 p-3 direction-rtl rounded-bottom rounded-2">
                             <div class="d-flex justify-content-between align-items-center rounded-2 p-0 overflow-hidden bg-light ">
                                 <input type="text" class="form-control w-70 h-100 rounded-right font-s-2 border-0 rounded-1" id="" placeholder=" نەخۆش...">
@@ -82,16 +97,17 @@
                             </div>
                             
                             <input type="text" class="form-control m-top-15-px font-s-2 border-0 rounded-1" id="" placeholder="ناو یاخود باڕکۆدی دەرمان...">
-                            <textarea class="form-control m-top-15-px font-s-2 border-0 rounded-1" placeholder="زانیاری ڕەچەتەی نەخۆش..." rows="3"></textarea>
+                            <textarea class="form-control m-top-10-px font-s-2 border-0 rounded-1" placeholder="زانیاری ڕەچەتەی نەخۆش..." rows="2"></textarea>
+                
                         </div>
-                        <div class="row d-flex justify-content-around align-items-center p-2 h-50">
-                            <button class="btn-first-half d-flex justify-content-center align-items-center w-30 h-400-px p-0 mx-0 m-1 overflow-hidden rounded rounded-5">
-                                <div class="d-flex justify-content-center w-80 align-items-center  font-s-2">گەڕاوە لە فرۆشتن</div>
-                                <div class="mdi mdi-redo-variant font-s-2 w-20"></div>
+                        <div class="row d-flex justify-content-around align-items-center p-2 h-50 bg-white mx-0">
+                            <button class="btn-second-half d-flex justify-content-center align-items-center w-30 h-400-px p-0 mx-0 m-1 overflow-hidden rounded rounded-5">
+                                <div class="d-flex justify-content-center w-80 align-items-center  font-s-2"> زیادکردن + چاپ</div>
+                                <div class="mdi mdi-printer font-s-2 w-20"></div>
                             </button>
-                            <button class="btn-first-half d-flex justify-content-center align-items-center w-30 h-400-px p-0 mx-0 m-1 overflow-hidden rounded rounded-5">
-                                <div class="d-flex justify-content-center w-80 align-items-center  font-s-2">فرۆشتن بێ باڕکۆد</div>
-                                <div class="mdi mdi-barcode-off font-s-2 w-20"></div>
+                            <button class="btn-second-half d-flex justify-content-center align-items-center w-30 h-400-px p-0 mx-0 m-1 overflow-hidden rounded rounded-5">
+                                <div class="d-flex justify-content-center w-80 align-items-center  font-s-2">زیادکردن</div>
+                                <div class="mdi mdi-plus-circle font-s-2 w-20"></div>
                             </button>
                         </div>
                     </div>
@@ -102,11 +118,11 @@
                 <div class="row w-100  m-right-0 m-left-0 m-top-15-px rounded rounded-2 border overflow-hidden d-flex justify-content-end flex-column 
                 align-content-center flex-row direction-rtl  box-shadow-1">
 
-                    <div class="col w-100 p-2 d-flex justify-content-end cust-bg-primary align-content-center flex-row rounded-bottom rounded-2 ">
+                    <div class="col w-100 p-3 d-flex justify-content-end cust-bg-primary align-content-center flex-row rounded-bottom rounded-2 ">
                         <div class="col-2 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100 h-100 h-100 d-flex justify-content-center align-items-center "> -->
                                 <!-- <input type="text" class="form-control w-80 direction-rtl h-80 p-1 top-bar-info" placeholder="دەرمان" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div class=" border-0 h-80 d-flex  text-light justify-content-around align-items-center font-s-2">
                                         دەرمان  
                                 </div>
                             <!-- </div> -->
@@ -114,7 +130,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="وەجبە" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div class=" border-0 h-80 d-flex  text-light justify-content-around align-items-center font-s-2">
                                     وەجبە
                                 </div>
                             <!-- </div> -->
@@ -122,7 +138,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" disabled class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="عدد بۆکس" aria-label="Recipient's username" > -->
-                                <div  class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div  class=" border-0 h-80 d-flex  text-light justify-content-around align-items-center font-s-2">
                                     عدد بۆکس
                                 </div>
                             <!-- </div> -->
@@ -130,7 +146,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="عدد" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div class=" border-0 h-80 d-flex  text-light justify-content-around align-items-center font-s-2">
                                     عدد
                                 </div>
                             <!-- </div> -->
@@ -138,7 +154,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder ="کڕین" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div class=" border-0 h-80 d-flex  text-light justify-content-around align-items-center font-s-2">
                                     کڕین
                                 </div>
                             <!-- </div> -->
@@ -146,7 +162,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="نرخ" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div class=" border-0 h-80 d-flex  text-light justify-content-around align-items-center font-s-2">
                                     نرخ
                                 </div>
                             <!-- </div> -->
@@ -154,7 +170,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="کۆ" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div class=" border-0 h-80 d-flex  text-light justify-content-around align-items-center font-s-2">
                                     کۆ
                                 </div>
                             <!-- </div> -->
@@ -162,7 +178,7 @@
                         <div class="col-2 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="بەسەرجون" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div class=" border-0 h-80 d-flex  text-light justify-content-around align-items-center font-s-2">
                                     بەسەرچوون
                                 </div>
                             <!-- </div> -->
@@ -170,7 +186,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="سڕینەوە" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div class=" border-0 h-80 d-flex  text-light justify-content-around align-items-center font-s-2">
                                     سڕینەوە
                                 </div>
                             <!-- </div> -->
@@ -178,7 +194,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="زانیاری" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
+                                <div class="border-0 h-80 d-flex text-light justify-content-around align-items-center font-s-2">
                                     زانیاری
                                 </div>
                             <!-- </div> -->
@@ -187,49 +203,49 @@
                     <div class="col w-100 p-1 d-flex justify-content-end bg-light align-content-center flex-row">
                         <div class="col-2 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100 h-100 h-100 d-flex justify-content-center align-items-center ">
-                                <input type="text" class="form-control w-80 direction-rtl h-80 p-1 top-bar-info font-s-2" placeholder="دەرمان" aria-label="Recipient's username" >
+                                <input type="text" class="form-control w-80 direction-rtl h-80 p-1 top-bar-info font-s-2" placeholder="دەرمان"  >
                                 <!-- <div class="btn btn-warning w-20 h-80  mdi  top-bar-icon mdi-pill d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
-                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="وەجبە" aria-label="Recipient's username" >
+                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="وەجبە"  >
                                 <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-bookmark d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
-                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="عدد بۆکس" aria-label="Recipient's username" >
+                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="عدد بۆکس"  >
                                 <!-- <div  class="btn btn-warning w-20 outline-none h-80  d-flex  top-bar-icon text-danger justify-content-center align-items-center mdi mdi-package-variant-closed-plus"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
-                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="عدد" aria-label="Recipient's username" >
+                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="عدد"  >
                                 <!-- <div class="btn btn-warning w-20 outline-none h-80  d-flex top-bar-icon text-danger justify-content-center align-items-center mdi mdi-bookmark-box-multiple "></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
-                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder ="کڕین" aria-label="Recipient's username" >
+                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder ="کڕین"  >
                                 <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-cart d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
-                                <input type="number" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="نرخ" aria-label="Recipient's username" >
+                                <input type="number" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="نرخ"  >
                                 <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-cash d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
-                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="کۆ" aria-label="Recipient's username" >
+                                <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="کۆ"  >
                                 <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-plus d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-2 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
-                                <input type="date" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="بەسەرچون" aria-label="Recipient's username" >
+                                <div type="date" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2 d-flex justify-content-start align-items-center"   >19/3/2022</div>
                                 <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-archive-clock  text-danger d-flex justify-content-center align-items-center"></div> -->
                             </div>
                         </div>

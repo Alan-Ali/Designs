@@ -77,10 +77,19 @@ textarea{
     background-color: #7c8c9b;
     color: white;
 }
+/* .btn-first-half:active{
+    border: 2px solid #6aa6df;
+    transition: 0;
+    position: relative
+} */
 
 .btn-second-half{
-    background-color: #2B4865;
+    background-color: #79b160;
     color: white;
+    outline: none;
+    transition: .5s all;
+    outline: none;
+    border: none
 }
 
 
@@ -114,11 +123,11 @@ textarea{
 
 
 .cust-b-primary{
-    border: solid;
+    border: solid #9fb1c2;
 }
 
 .cust-b-secondary{
-    border: solid;
+    border: solid #78a6b8;
 }
 
 .cust-b-tertiary{
@@ -127,11 +136,11 @@ textarea{
 
 
 .cust-text-primary{
-    color: ;
+    color:  #9fb1c2;
 }
 
 .cust-text-secondary{
-    color: ;
+    color: #78a6b8;
 }
 
 .cust-text-tertiary{

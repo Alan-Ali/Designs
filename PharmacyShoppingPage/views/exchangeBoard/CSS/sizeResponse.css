@@ -27,6 +27,17 @@
         /* align-content: flex-end !important; */
         /* width: 100% */
     }
+    
+    .money-parts{
+        justify-content: start !important;
+        align-items: center !important;
+        flex-direction: row !important;
+    }
+
+    .part-1{
+        width: 50%;
+        height: 100%;
+    }
 
     .column-width{
         width: 100% !important;
@@ -34,9 +45,10 @@
 
     .row-shaped{
         width: 100% !important;
-        flex-direction: row !important;
+        flex-direction: column !important;
     }
 
+    
 
     .giving-instructions{
         /* flex-wrap: nowrap !important; */
