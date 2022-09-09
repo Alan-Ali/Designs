@@ -270,14 +270,12 @@ byName('pastsurgery').forEach((val,i) => {
     
                     
                     [...byClass(`past-surgery-item`)].forEach((val, i) => {
-                        // $(val).parent().parent().remove();
-
+        
                         val.addEventListener("click", ()=>{
-                            // $(val).parent().parent().remove();
                             let i = 0, value = val;
                             while(i != 2){
                                 value = value.parentNode;
-                                // console.log(value);
+
                                 i++;
                             }
                             if(value.parentNode.hasChildNodes()){
@@ -285,7 +283,9 @@ byName('pastsurgery').forEach((val,i) => {
                             }
                             
                         });
-                    })     
+
+
+                    })          
                 }
             })
 

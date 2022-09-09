@@ -1,0 +1,31 @@
+.top-bar-buttons:hover{
+    color: white
+}
+
+.bg-dim-grey{
+    background: #E6E7EE;
+}
+
+.bg-dim-grey:hover{
+    background: #F8F8FA;
+    cursor: pointer;
+}
+
+
+.bg-dim-grey-no-hover{
+    background: #b6b6b6;
+    cursor: pointer;
+}
+
+
+input[type="date"]{
+    cursor: pointer;
+}
+
+.bg-white{
+    background-color: #FFFFFF;
+}
+
+.bg-dim-white{
+    background-color: #F8F8FA;
+}

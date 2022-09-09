@@ -14,7 +14,7 @@
 </head>
 <body class="h-100 p-1">
     <div class="container-fluid d-flex justify-content-around align-items-start h-100 w-100 rounded p-3 column-shaped" >
-        <div class="col-2 h-100 border m-1 d-flex justify-content-center align-items-center flex-column rounded rounded-3 row-shaped">
+        <div class="col-2 h-100 border m-1 d-flex justify-content-center align-items-center flex-column rounded rounded-3 row-shaped box-shadow-1">
             <div class="d-flex justify-content-center align-items-center flex-column w-100">
                 <button type="button" class="btn btn-secondary w-75 m-2 rounded-5">5000</button>
                 <button type="button" class="btn btn-secondary w-75 m-2 rounded-5">10000</button>
@@ -40,56 +40,73 @@
 
         <div class="col-10 p-2 d-flex justify-content-start align-content-center flex-column column-width">
 
-            <div class="row w-100 border border-1 rounded m-0 p-0 d-flex justify-content-end align-items-center flex-row overflow-hidden">
-
-                <div  class="row w-100 h-20 m-0 p-2 bg-secondary d-flex justify-content-end align-items-center flex-row">
-                    <div class="input-group w-20  resize-top-bar-buttons">
-                        <div class="form-control direction-rtl p-1 border left-border" > فرۆشتن بەبێ بارکۆد</div>
-                        <div   class="btn btn-warning mdi mdi-barcode-off right-border "></div>
-                      </div>
-                    <div class="input-group w-20  resize-top-margin resize-top-bar-buttons">
-                        <div class="form-control direction-rtl p-1 left-border" >گەڕاوە لە فرۆشتن</div>
-                        <div class="btn btn-warning mdi mdi-redo-variant right-border " type="button" id="button-addon2"></div>
-                      </div>
-                    <div class="input-group w-30 resize-top-bar resize-top-margin">
-                        <input type="text" class="form-control rounded-left direction-rtl p-1 " placeholder="ناو یاخود باڕکۆدی دەرمان" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <div class="row  w-100 m-0 p-0 d-flex justify-content-center align-items-start flex-row  overflow-hidden">
+            <!-- patient part -->
+            <div class="col-6 font-s-2 ">
+                <div class="row border border-1  rounded rounded-2 overflow-hidden box-shadow-1">
+                    <div class="row cust-bg-primary mx-0 direction-rtl p-3 d-flex justify-content-around align-items-center rounded-bottom rounded-2">
+                        <div class="row d-flex justify-content-between align-items-start flex-row w-100 border-2 p-0">
+                            <input type="number" class="form-control font-s-2 w-45 border-0 rounded-1 m-right-10-px" id="" placeholder="واسڵ...">
+                            <input type="number" class="form-control font-s-2 w-45 border-0 rounded-1 m-left-10-px" id="" placeholder="داشکاندن...">
     
-                        <div  class="btn btn-danger mdi mdi-tag-search right-border d-flex justify-content-center align-items-center" type="button" id="button-addon1" disabled></div>
+                            <input type="number" class="form-control font-s-2 w-45 m-top-10-px border-0 rounded-1 align-self-baseline m-right-10-px" id="" placeholder="قەرز...">
+                            
+                        </div>
+   
+                        <div class="form-control font-s-1 w-100 m-top-10-px cust-b-tertiary bg-transparent border border-1 cust-text-tertiary rounded-1 d-flex justify-content-center align-items-center" id="" >234234</div>
+                        
                     </div>
-    
-                    
+                    <div class="row d-flex justify-content-around align-items-center p-2 h-50">
+                        <button class="btn-first-half d-flex justify-content-center align-items-center w-30 h-400-px p-0 mx-0 m-1 overflow-hidden rounded rounded-5">
+                            <div class="d-flex justify-content-center w-80 align-items-center  font-s-2">گەڕاوە لە فرۆشتن</div>
+                            <div class="mdi mdi-redo-variant font-s-2 w-20"></div>
+                        </button>
+                        <button class="btn-first-half d-flex justify-content-center align-items-center w-30 h-400-px p-0 mx-0 m-1 overflow-hidden rounded rounded-5">
+                            <div class="d-flex justify-content-center w-80 align-items-center  font-s-2">فرۆشتن بێ باڕکۆد</div>
+                            <div class="mdi mdi-barcode-off font-s-2 w-20"></div>
+                        </button>
+                    </div>
                 </div>
-                <div class="row w-100 h-20 m-0 p-2 bg-light d-flex justify-content-end align-content-center flex-row">
-                    <div class="w-10 h-100 d-flex justify-content-center align-items-center">
-                        <div class="input-group direction-ltr p-1 w-100  h-80 d-flex justify-content-center align-items-center">
-                            <!-- <input type="text" class="form-control w-80 h-80 direction-rtl" placeholder="سڕینەوە" aria-label="Recipient's username" disabled> -->
-                            <button class="btn btn-light border-0 w-40 outline-none rounded-5 h-80 mdi mdi-minus d-flex text-danger  justify-content-center align-items-center" type="button" id="button-addon2"></button>
+            </div>
+                <!-- prices part -->
+                <div class="col-6 overflow-hidden  font-s-2 ">
+                    <div class="row border border-1 mx-0 rounded rounded-2 overflow-hidden box-shadow-1 m-bottom-15-px">
+                        <div class="row cust-bg-primary mx-0 p-3 direction-rtl rounded-bottom rounded-2">
+                            <div class="d-flex justify-content-between align-items-center rounded-2 p-0 overflow-hidden bg-light ">
+                                <input type="text" class="form-control w-70 h-100 rounded-right font-s-2 border-0 rounded-1" id="" placeholder=" نەخۆش...">
+                                <div class="d-flex justify-content-around align-items-center w-30 p-1 h-100">
+                                    <button type="button" class="btn mdi mdi-plus-circle text-success rounded-5 w-20 h-80 border-0 d-flex justify-content-center align-items-center font-s-2"></button>
+                                    <button type="button" class="btn mdi mdi-minus-circle text-danger rounded-5 w-20 h-80 border-0 d-flex justify-content-center align-items-center font-s-2"></button>
+
+                                </div>
+                            </div>
+                            
+                            <input type="text" class="form-control m-top-15-px font-s-2 border-0 rounded-1" id="" placeholder="ناو یاخود باڕکۆدی دەرمان...">
+                            <textarea class="form-control m-top-15-px font-s-2 border-0 rounded-1" placeholder="زانیاری ڕەچەتەی نەخۆش..." rows="3"></textarea>
+                        </div>
+                        <div class="row d-flex justify-content-around align-items-center p-2 h-50">
+                            <button class="btn-first-half d-flex justify-content-center align-items-center w-30 h-400-px p-0 mx-0 m-1 overflow-hidden rounded rounded-5">
+                                <div class="d-flex justify-content-center w-80 align-items-center  font-s-2">گەڕاوە لە فرۆشتن</div>
+                                <div class="mdi mdi-redo-variant font-s-2 w-20"></div>
+                            </button>
+                            <button class="btn-first-half d-flex justify-content-center align-items-center w-30 h-400-px p-0 mx-0 m-1 overflow-hidden rounded rounded-5">
+                                <div class="d-flex justify-content-center w-80 align-items-center  font-s-2">فرۆشتن بێ باڕکۆد</div>
+                                <div class="mdi mdi-barcode-off font-s-2 w-20"></div>
+                            </button>
                         </div>
                     </div>
-                    <div class="w-10 h-100 d-flex justify-content-center align-items-center">
-                        <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
-                            <!-- <input type="text" class="form-control w-80 h-80 direction-rtl" placeholder="زانیاری" aria-label="Recipient's username" disabled> -->
-                            <button class="btn btn-light border-0 w-40 outline-none h-80 rounded-5 mdi mdi-plus text-success d-flex justify-content-center align-items-center " type="button" id="button-addon2" ></button>
-                        </div>
-                    </div>
-                    <div class="input-group w-40">
-                        <input type="text" class="form-control rounded-left direction-rtl p-1" placeholder="نەخۆش" aria-label="Example text with button addon" aria-describedby="button-addon1">
-    
-                        <div  class="btn btn-danger mdi mdi-account-injury right-border d-flex justify-content-center align-items-center" type="button" id="button-addon1" disabled></div>
-                    </div>
-
                 </div>
+
                 
             </div>
-
                 <div class="row w-100  m-right-0 m-left-0 m-top-15-px rounded rounded-2 border overflow-hidden d-flex justify-content-end flex-column 
-                align-content-center flex-row direction-rtl  ">
+                align-content-center flex-row direction-rtl  box-shadow-1">
 
-                    <div class="col w-100 p-2 d-flex justify-content-end bg-secondary align-content-center flex-row">
+                    <div class="col w-100 p-2 d-flex justify-content-end cust-bg-primary align-content-center flex-row rounded-bottom rounded-2 ">
                         <div class="col-2 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100 h-100 h-100 d-flex justify-content-center align-items-center "> -->
                                 <!-- <input type="text" class="form-control w-80 direction-rtl h-80 p-1 top-bar-info" placeholder="دەرمان" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                         دەرمان  
                                 </div>
                             <!-- </div> -->
@@ -97,7 +114,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="وەجبە" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                     وەجبە
                                 </div>
                             <!-- </div> -->
@@ -105,7 +122,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" disabled class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="عدد بۆکس" aria-label="Recipient's username" > -->
-                                <div  class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div  class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                     عدد بۆکس
                                 </div>
                             <!-- </div> -->
@@ -113,7 +130,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="عدد" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div class="btn btn-btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                     عدد
                                 </div>
                             <!-- </div> -->
@@ -121,7 +138,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder ="کڕین" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                     کڕین
                                 </div>
                             <!-- </div> -->
@@ -129,7 +146,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="نرخ" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                     نرخ
                                 </div>
                             <!-- </div> -->
@@ -137,7 +154,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="کۆ" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                     کۆ
                                 </div>
                             <!-- </div> -->
@@ -145,7 +162,7 @@
                         <div class="col-2 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="بەسەرجون" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div class="btn btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                     بەسەرچوون
                                 </div>
                             <!-- </div> -->
@@ -153,7 +170,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="سڕینەوە" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                     سڕینەوە
                                 </div>
                             <!-- </div> -->
@@ -161,7 +178,7 @@
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <!-- <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center"> -->
                                 <!-- <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info" placeholder="زانیاری" aria-label="Recipient's username" disabled> -->
-                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-warning justify-content-around align-items-center font-s-2">
+                                <div class="btn btn-outline-light border-0 h-80 d-flex cur-pointer text-light justify-content-around align-items-center font-s-2">
                                     زانیاری
                                 </div>
                             <!-- </div> -->
@@ -171,49 +188,49 @@
                         <div class="col-2 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100 h-100 h-100 d-flex justify-content-center align-items-center ">
                                 <input type="text" class="form-control w-80 direction-rtl h-80 p-1 top-bar-info font-s-2" placeholder="دەرمان" aria-label="Recipient's username" >
-                                <div class="btn btn-warning w-20 h-80  mdi  top-bar-icon mdi-pill d-flex  text-danger justify-content-center align-items-center"></div>
+                                <!-- <div class="btn btn-warning w-20 h-80  mdi  top-bar-icon mdi-pill d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
                                 <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="وەجبە" aria-label="Recipient's username" >
-                                <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-bookmark d-flex  text-danger justify-content-center align-items-center"></div>
+                                <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-bookmark d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
                                 <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="عدد بۆکس" aria-label="Recipient's username" >
-                                <div  class="btn btn-warning w-20 outline-none h-80  d-flex  top-bar-icon text-danger justify-content-center align-items-center mdi mdi-package-variant-closed-plus"></div>
+                                <!-- <div  class="btn btn-warning w-20 outline-none h-80  d-flex  top-bar-icon text-danger justify-content-center align-items-center mdi mdi-package-variant-closed-plus"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
                                 <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="عدد" aria-label="Recipient's username" >
-                                <div class="btn btn-warning w-20 outline-none h-80  d-flex top-bar-icon text-danger justify-content-center align-items-center mdi mdi-bookmark-box-multiple "></div>
+                                <!-- <div class="btn btn-warning w-20 outline-none h-80  d-flex top-bar-icon text-danger justify-content-center align-items-center mdi mdi-bookmark-box-multiple "></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
                                 <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder ="کڕین" aria-label="Recipient's username" >
-                                <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-cart d-flex  text-danger justify-content-center align-items-center"></div>
+                                <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-cart d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
                                 <input type="number" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="نرخ" aria-label="Recipient's username" >
-                                <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-cash d-flex  text-danger justify-content-center align-items-center"></div>
+                                <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-cash d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
                                 <input type="text" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="کۆ" aria-label="Recipient's username" >
-                                <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-plus d-flex  text-danger justify-content-center align-items-center"></div>
+                                <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-plus d-flex  text-danger justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-2 d-flex justify-content-center align-items-center">
                             <div class="input-group direction-ltr p-1 w-100  h-100 d-flex justify-content-center align-items-center">
                                 <input type="date" class="form-control w-80 h-80 direction-rtl p-1 top-bar-info font-s-2" placeholder="بەسەرچون" aria-label="Recipient's username" >
-                                <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-archive-clock  text-danger d-flex justify-content-center align-items-center"></div>
+                                <!-- <div class="btn btn-warning w-20 outline-none h-80  mdi top-bar-icon mdi-archive-clock  text-danger d-flex justify-content-center align-items-center"></div> -->
                             </div>
                         </div>
                         <div class="col-1 d-flex justify-content-center align-items-center">
@@ -230,68 +247,7 @@
                         </div>
                     </div>
                     
-
                 </div> 
-                <div class="row w-100 m-right-0 m-left-0 m-top-15-px rounded rounded-2 border overflow-hidden d-flex justify-content-start flex-column full-size
-                align-content-center">
-
-                    <div class="row  w-100 p-2 d-flex justify-content-end bg-secondary align-content-center flex-row giving-instructions full-size">
-
-                        <div class="input-group  w-40 full-size">
-                            <input type="text" class="form-control rounded-left direction-rtl p-1" placeholder="نرخ" aria-label="Example text with button addon" aria-describedby="button-addon1">
-        
-                            <div  class="btn btn-danger mdi mdi-cash right-border d-flex justify-content-center align-content-center" 
-                            type="button" id="button-addon1"></div>
-                        </div>  
-                        <div class=" input-group w-20 full-size  ">
-                            <input type="text" class="form-control rounded-left direction-rtl p-1" placeholder="وەسڵ" aria-label="Example text with button addon" aria-describedby="button-addon1">
-        
-                            <div  class="btn btn-danger mdi mdi-list-box right-border d-flex justify-content-center align-content-center" 
-                            type="button" id="button-addon1"></div>
-                        </div>  
-                        <div class="input-group w-20 full-size  ">
-                            <input type="text" class="form-control rounded-left direction-rtl p-1" placeholder="قەرز" aria-label="Example text with button addon" aria-describedby="button-addon1">
-        
-                            <div  class="btn btn-danger mdi mdi-cash-sync right-border d-flex justify-content-center align-content-center" 
-                            type="button" id="button-addon1"></div>
-                        </div>  
-                        <div class="input-group w-20 full-size  ">
-                            <input type="text" class="form-control rounded-left direction-rtl p-1" placeholder="داشکاندن" aria-label="Example text with button addon" aria-describedby="button-addon1">
-        
-                            <div  class="btn btn-danger mdi mdi-percent right-border d-flex justify-content-center align-content-center" 
-                            type="button" id="button-addon1"></div>
-                        </div>  
-
-                        <div class="input-group w-40 m-top-12-px full-size m-bottom-10-px ">
-                            <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-                            <textarea class="form-control direction-rtl p-1" id="exampleFormControlTextarea1" placeholder="زانیاری ڕەچەتەی نەخۆش" rows="3"></textarea>
-                            <div  class="btn btn-danger mdi mdi-information right-border d-flex justify-content-center align-content-center" 
-                            type="button" id="button-addon1"></div>    
-                        </div>
-
-                    </div>
-                    <div class="row bg-light p-2 d-flex justify-content-end align-items-center flex-row">
-                        <div class="input-group w-20 resize-w">
-                            <input type="text" class="form-control rounded-left p-1 direction-rtl d-flex justify-content-center align-content-center" disabled  placeholder="زیادکردن + چاپ" aria-label="Example text with button addon" aria-describedby="button-addon1">
-        
-                            <button  class="btn btn-success mdi mdi-percent right-border d-flex justify-content-center align-content-center" 
-                            type="button" id="button-addon1"></button>
-                        </div>  
-
-                        <div class="input-group w-20 resize-w">
-                            <input type="text" class="form-control rounded-left p-1 direction-rtl d-flex justify-content-center align-content-center" disabled  placeholder="زیادکردن" aria-label="Example text with button addon" aria-describedby="button-addon1">
-        
-                            <button  class="btn btn-success mdi mdi-percent right-border  " 
-                            type="button" id="button-addon1"></button>
-                        </div>  
-
-
-                    </div>
-                    
-
-                </div> 
-
-           
           
         </div>
     </div>

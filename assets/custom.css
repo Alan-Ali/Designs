@@ -53,6 +53,18 @@ textarea{
 }
 
 
+.dis-none{
+    display: none;
+}
+
+.vis-off{
+    visibility: hidden;
+}
+
+.vis-on{
+    visibility: visible;
+}
+
 .bg-color-light-turquoise{
     background-color: #A7D2CB;
 }
@@ -191,6 +203,25 @@ textarea{
 
 .p-top-15-px{
     padding-top: 15px;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+    }
+
+.btn:active {
+    outline: none;
+    box-shadow: none;
+    }   
+
+.outline-none:focus{
+    outline: none;
+    box-shadow: none;
+}
+.outline-none:active{
+    outline: none;
+    box-shadow: none;
 }
 
 
@@ -401,6 +432,16 @@ textarea{
     font-size: calc(1vw + .2em);
 }
 
+.font-s-3{
+    font-size: calc(1vw + .5em);
+}
+
+
+.font-s-4{
+    font-size: calc(1vw + .11em);
+}
+
+
 .bg-color-blue{
     background-color: #369EFC;
 }
@@ -459,6 +500,10 @@ textarea{
     width: 11%;
 }
 
+.w-12{
+    width: 12%;
+}
+
 .w-15{
     width: 15%;
 }
@@ -493,6 +538,10 @@ textarea{
 
 .w-90{
     width: 90%;
+}
+
+.w-95{
+    width: 95%;
 }
 .w-91{
     width: 91%;
@@ -545,4 +594,46 @@ textarea{
 }
 .h-90{
     height: 90%;
+}
+
+
+.h-100-px{
+    height: 100px;
+}
+
+
+.h-200-px{
+    height: 200px;
+}
+.h-300-px{
+    height: 300px;
+}
+
+
+.h-400-px{
+    height: 400px;
+}
+.h-500-px{
+    height: 500px;
+}
+
+
+.h-600-px{
+    height: 600px;
+}
+.h-700-px{
+    height: 700px;
+}
+
+
+.h-800-px{
+    height: 800px;
+}
+.h-900-px{
+    height: 900px;
+}
+
+
+.h-1000-px{
+    height: 1000px;
 }
