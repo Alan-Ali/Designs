@@ -76,6 +76,33 @@ input[type="date"]{
     
 }
 
-.blue-buttons:hover{
+.blue-buttons{
     background-color: #79B2EC;
+    transition: .3s background;
+}
+
+
+.blue-buttons:hover{
+    background-color: #EFC670;
+}
+
+
+.green-buttons{
+    background: #79B160;
+    transition: .3s background;
+}
+
+.green-buttons:hover{
+    background: #EFC670;
+}
+
+
+.hover-shadow-style{
+    transition: .3s all;
+    background-color: white;
+}
+
+.hover-shadow-style:hover{
+ 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
