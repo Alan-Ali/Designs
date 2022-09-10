@@ -58,6 +58,20 @@ textarea{
 }
 
 
+.rounded-bottom-25-px{
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+.rounded-top-25-px{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+
+
+
 .dis-none{
     display: none;
 }
@@ -569,7 +583,7 @@ textarea{
 
 
 .font-s-4{
-    font-size: calc(1vw + .11em);
+    font-size: calc(1vw + 1.1em);
 }
 
 

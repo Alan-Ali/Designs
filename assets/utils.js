@@ -138,3 +138,22 @@ const replaceClasses = (element, css_class, replacement) => {
 
 
 
+ var byQuery = (query) => {
+    return document.querySelector(query)
+}
+ var allByQuery = (query) => {
+    return document.querySelectorAll(query)
+}
+ var byTag = (tag_name) => {
+    return document.getElementsByTagName(tag_name)
+}
+ var byClass = (class_name) => {
+    return document.getElementsByClassName(class_name)
+}
+var byId = (id_name) => {
+    return document.getElementById(id_name)
+}
+
+ var byName = (tag_name) => {
+    return document.getElementsByName(tag_name)
+}
