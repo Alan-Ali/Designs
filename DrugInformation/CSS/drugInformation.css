@@ -1,4 +1,8 @@
 
 .button-purple:hover{
-    background: #8F81E9;
+    background: #8F81E9 !important;
+    transition: .2s background linear;
+    color: white;
+    outline: none;
+    border: none;
 }
