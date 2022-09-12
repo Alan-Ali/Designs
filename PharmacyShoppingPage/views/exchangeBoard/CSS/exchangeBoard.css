@@ -223,10 +223,19 @@ input[type=number] {
     direction: ltr;
 }
 
+.left-border{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
 
 .right-border{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+.bottom-border{
+    border-bottom-left-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
 }
 
 .of-hidden{

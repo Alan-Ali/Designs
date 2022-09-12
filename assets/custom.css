@@ -70,6 +70,14 @@ textarea{
 }
 
 
+.box-shadow-1{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    
+}
+
+.box-shadow-2{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 
 
 .dis-none{
@@ -95,14 +103,10 @@ textarea{
     color: #B7C4CF;
 }
 
-.left-border{
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-}
 
-.font-c-red{
+/* .font-c-red{
     
-}
+} */
 
 .custom-tooltip {
     --bs-tooltip-bg: var(--bs-primary);
@@ -117,9 +121,19 @@ textarea{
 }
 
 
+.left-border{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
 .right-border{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+.bottom-border{
+    border-bottom-left-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
 }
 
 .of-hidden{
