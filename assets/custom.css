@@ -835,6 +835,13 @@ textarea{
 }
 
 
+.font-s-5{
+    font-size: calc(.9vw + .3em);
+}
+
+
+
+
 .bg-color-blue{
     background-color: #369EFC;
 }
