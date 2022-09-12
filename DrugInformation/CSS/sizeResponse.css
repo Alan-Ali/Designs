@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) and (min-width: 400px){
+    .statistics-parts{
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    .statistics-select-parts{
+        width: 45%; 
+
+    }
+
+    .print-navigate-buttons{
+        width: 50%;
+    }
+
+    .page-title{
+        width: 50%
+    }
+}

@@ -2,11 +2,12 @@
 /* yellow derivative: #ebb746 */
 @import url("./colorStruct.css");
 
-.button-yellow{
+.button-purple{
     color: var(--tertiary-first-der);
+    transition: .3s background;
 }
 
-.button-yellow:hover{
+.button-purple:hover{
     background: var(--tertiary) !important;
     transition: .2s background linear;
     color: white;
