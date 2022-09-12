@@ -105,6 +105,7 @@ input[type=number] {
     background-color: var(--tertiary);
     color: white;
 }
+
 /* .btn-first-half:active{
     border: 2px solid #6aa6df;
     transition: 0;

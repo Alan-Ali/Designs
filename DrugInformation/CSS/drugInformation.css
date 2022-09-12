@@ -3,12 +3,12 @@
 @import url("./colorStruct.css");
 
 .button-purple{
-    color: var(--tertiary-first-der);
+    color: var(--primary);
     transition: .3s background;
 }
 
 .button-purple:hover{
-    background: var(--tertiary) !important;
+    background: var(--primary) !important;
     transition: .2s background linear;
     color: white;
     outline: none;

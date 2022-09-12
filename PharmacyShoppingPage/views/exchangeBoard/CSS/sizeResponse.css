@@ -34,6 +34,17 @@
         flex-direction: row !important;
     }
 
+    .row-2-resize{
+        /* direction:ltr; */
+        flex-direction: column-reverse;
+    }
+
+    .resize-width{
+        width: 100%;
+    }
+    .resize-title{
+        width: 50%;
+    }
     .part-1{
         width: 50%;
         height: 100%;
@@ -47,8 +58,6 @@
         width: 100% !important;
         flex-direction: column !important;
     }
-
-    
 
     .giving-instructions{
         /* flex-wrap: nowrap !important; */
