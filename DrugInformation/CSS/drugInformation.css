@@ -1,8 +1,21 @@
 
-.button-purple:hover{
-    background: #8F81E9 !important;
+/* yellow derivative: #ebb746 */
+@import url("./colorStruct.css");
+
+.button-yellow{
+    color: var(--tertiary-first-der);
+}
+
+.button-yellow:hover{
+    background: var(--tertiary) !important;
     transition: .2s background linear;
     color: white;
     outline: none;
     border: none;
 }
+
+.statistics-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+}
+

@@ -1,3 +1,19 @@
+:root {
+
+    --priamry: #1e90ff;
+    /* --primary-frist-der: #234233; */
+    /* --primary-second-der: #234233; */
+    
+    --secondary: #ffffff;
+    /* --secondary-frist-der: #234233; */
+    /* --secondary-second-der: #234233; */
+
+    --tertiary: #343243;
+    /* --tertiary-frist-der: #234233; */
+    /* --tertiary-second-der: #234233; */
+
+}
+
 
 .cust-bg-primary{
     background-color: ;
