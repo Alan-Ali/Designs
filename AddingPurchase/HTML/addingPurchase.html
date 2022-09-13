@@ -17,14 +17,14 @@
     <div class="container-fluid mx-0 ">
         <div class="row w-100 d-flex justify-content-center align-items-center p-0 m-0 mx-0 font-s-1">
             
-            <div class="d-flex justify-content-around align-items-center w-20 bottom-border cust-bg-primary resize-title m-0">
+            <div class="d-flex justify-content-around align-items-center w-20 bottom-border cust-bg-primary resize-title m-bottom-10-px">
                 <div class="d-flex justify-content-center align-items-center text-light ">زیادکردنی کڕین </div>
             </div>
         </div>
 
         <div class="row d-flex justify-content-around align-items-start flex-row w-100 font-s-2 p-2 mx-0">
             <div class="w-35 rounded-3 d-flex justify-content-around align-items-center p-3 bg-light box-shadow-1">
-                <button class="w-40 text-light d-flex justify-content-around align-items-center border-0 rounded rounded-5 overflow-hidden p-1 blue-buttons">
+                <button class=" w-40 text-light d-flex justify-content-around align-items-center border-0 rounded rounded-5 overflow-hidden p-1 blue-buttons">
                     <div class="w-80 ">
                         زیادکردنی دەرمان
                     </div>
@@ -32,7 +32,7 @@
 
                     </div>
                 </button>
-                <button class="w-40 text-light d-flex justify-content-around align-items-center border-0 rounded rounded-5 overflow-hidden p-1 blue-buttons">
+                <button class=" w-40 text-light d-flex justify-content-around align-items-center border-0 rounded rounded-5 overflow-hidden p-1 blue-buttons">
                     <div class="w-80 ">
                         لیستی کڕینەکان
                     </div>
@@ -50,6 +50,7 @@
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
+                  
             </div>
         </div>
         <div class="row d-flex justify-content-around align-items-start flex-row w-100 font-s-2 p-2 mx-0">
@@ -125,12 +126,17 @@
                 </div>
                 
                 <div class="w-100 d-flex justify-content-around align-items-center flex-row p-2">
-                    <label for="fileinput" class="w-45 border border-1 rounded-5 d-flex justify-content-around align-items-center flex-row-reverse overflow-hidden cur-pointer " >
-                        <div style="background-color: #E9ECEF" class="w-25 d-flex justify-content-center align-items-center direction-rtl p-1 mdi mdi-folder cust-text-tertiary"></div>
+                    <label for="fileinput" class="w-45 border border-2 rounded-5 d-flex justify-content-around align-items-center flex-row-reverse overflow-hidden cur-pointer " >
+                        <div style="background-color: #E9ECEF; color: rgb(247, 230, 73);" class="w-25 d-flex justify-content-center align-items-center direction-rtl p-1 mdi mdi-folder "></div>
                         <div id="filename" class="w-75 direction-rtl p-1 d-flex justify-content-start align-items-center bg-white">هیچ فایلێک هەڵنەبژێرراوە</div>
                     </label>                
-                    <input type="file" class="form-control w-45 rounded-5 direction-rtl dis-none" name="" id="fileinput" placeholder="">
-                    <input type="date" class="form-control w-45 rounded-5 direction-rtl " name=""  placeholder="">
+                    <input type="file" class="form-control w-45 rounded-5 direction-ltr dis-none" name="" id="fileinput" placeholder="">
+                    <div class="input-group w-45 rounded-5 ">
+                        <input type="date" class="form-control left-border" aria-label="Dollar amount (with dot and two decimal places)">
+                        <!-- <span class="input-group-text">$</span> -->
+                        <span class="input-group-text right-border">بەروار</span>
+                    </div>
+                    <!-- <input type="date" class="form-control w-45 rounded-5 direction-rtl " name=""  placeholder=""> -->
                 </div>
                 <div class="w-100 d-flex justify-content-around align-items-center flex-row p-2 direction-rtl ">
                     <textarea class="form-control w-95 mh-100" id="exampleFormControlTextarea1" rows="2" placeholder="تێبینی..."></textarea>

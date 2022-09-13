@@ -89,28 +89,28 @@ input[type="date"]{
 
 
 .blue-buttons{
-    outline: none;
+    /* outline: none; */
     
 }
 
 .blue-buttons{
-    background-color: var(--primary);
+    background-color: var(--secondary);
     transition: .3s background;
 }
 
 
 .blue-buttons:hover{
-    background-color: var(--tertiary);
+    background-color: #79b160;
 }
 
 /* green: #79B160 */
 .green-buttons{
-    background: #79B160;
+    background: var(--secondary);
     transition: .3s background;
 }
 /* yellow: #EFC670 */
 .green-buttons:hover{
-    background: var(--tertiary);
+    background: #79b160;
 }
 
 

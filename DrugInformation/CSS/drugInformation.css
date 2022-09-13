@@ -11,8 +11,8 @@
     background: var(--primary) !important;
     transition: .2s background linear;
     color: white;
-    outline: none;
-    border: none;
+    /* outline: none;
+    border: none; */
 }
 
 .statistics-shadow{

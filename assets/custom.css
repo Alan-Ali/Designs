@@ -58,6 +58,13 @@ textarea{
 }
 
 
+.dis-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .rounded-bottom-25-px{
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
