@@ -17,47 +17,293 @@
 <body class="">
 
     <div class="container-fluid mx-0 p-0 m-0">
-        <div class="row border border-2 p-4 dis-flex-center mx-0 ">
-            <div class="col w-50 border-2 flex-row border d-flex justify-content-start align-items-center p-0 mx-0 m-0">
-                <div class="p-0">
-                    <p class="p-0 m-1 font-s-2">
-                        <b>
+        
+        <div class="row p-4 d-flex justify-content-end align-items-center mx-0 border-bottom border-1">
+            <button class="btn btn-light w-5 rounded rounded-5 dis-flex-center font-s-2 border-0" id="en">
+                en
+            </button>                    
+            <button class="btn btn-light w-5 rounded rounded-5 dis-flex-center font-s-2 border-0" id="ku">
+                ku
+            </button>
+                                
+            <button class="btn btn-light w-5 rounded rounded-5 dis-flex-center font-s-2 border-0" id="">
+                ar
+            </button>
+        </div>
+        <div class="row p-4 dis-flex-center mx-0 border-bottom border-1 flex-row direction-cells">
+            <div class="col w-50 border-2 flex-row d-flex justify-content-start align-items-center p-0 mx-0 m-0 direction-cells">
+                <div class="p-0 d-flex flex-column direction-cells">
+                    <p class="p-0 m-1 font-s-2 d-flex flex-row direction-cells">
+                        <b class="font-s-2 translate direction-words direction-ltr " data-dict="store">
                             Store
                         </b>
                     </p>
-                    <p style="color: #929292;" class="p-0 m-1">
-                        FrenchFry Restaurant 
+                    <p style="color: #929292;" class="p-0 m-1 translate direction-words" data-dict="french_fry_restaurant">
+                        French Fry Restaurant 
                     </p>
                 </div>
             </div>
-            <div class="col w-50 border flex-row border-2 d-flex justify-content-around align-items-center">
-                    <div class="w-30 p-0">
+            <div class="col w-50 flex-row d-flex justify-content-around align-items-center">
+                <div class="w-50 dis-flex-center">
+                    <div class="w-60 p-0 ">
                         <div class="input-group  rounded rounded-4 border overflow-hidden p-0 mx-0">
                             <span class="input-group-text mdi mdi-magnify font-s-2 border-0 outline-none mx-0 m-0" id="basic-addon1"></span>
-                            <input type="text" class="form-control border-0 outline-none" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                          </div>
+                            <input type="text" class="form-control border-0 outline-none" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
                     </div>
-                    <div class="w-10 border mdi mdi-bell dis-flex-center">
-                        
+                </div>
+                <div class="w-50 d-flex justify-content-around align-items-center font-s-2" >
+                    <button class="btn btn-light w-20 rounded rounded-5 mdi mdi-bell dis-flex-center font-s-2 border-0">
+                            
+                    </button>
+                    
+                    <button class="btn btn-light w-20 rounded rounded-5 mdi mdi-cog dis-flex-center font-s-2 border-0">
+                            
+                    </button>
+                    <div class="w-45  h-10-px dis-flex-center">
+                        Alan Ali
                     </div>
-                    <div class="w-10 border mdi mdi-cog dis-flex-center
-                    ">
-                        
-                    </div>
-                    <div class="w-15 border h-10-px">
-                        lsjflsdkaf 
-                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="row border  border-2 mx-0">
-            asdfsdf
+        <div class="row mx-0">
+            <div class="col-9 p-4">
+                <div class="w-100 dis-flex-center flex-row border-bottom border-2 p-2 direction-cells">
+                    <div class="w-50 d-flex justify-content-start align-items-center p-1 direction-cells">
+                        <div class=" font-s-1 translate direction-words" data-dict="restaurant">
+                            Restaurant
+                        </div>
+                    </div>
+                    <div class="w-50 d-flex justify-content-end align-items-center direction-cells">
+                        <div class=" font-s-3 w-20 border rounded rounded-5 p-1 dis-flex-center translate direction-words" data-dict="view_all">
+                            view all
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-around align-items-center p-3">
+                    <div class="w-20 border border-2 dis-flex-center rounded rounded-4">
+                        <div class="w-100 dis-flex-center font-s-4 mdi mdi-image-broken location-image p-2"></div>
+                        <div class="w-100 dis-flex-center p-1"><b class="translate direction-words" data-dict="french_fry_restaurant">French Fry Restaurant</b></div>
+                        <div class="w-100 dis-flex-center p-1 translate" data-dict="Queens_NY_USA">Queens, NY, USA</div>
+                    </div>
+                    <div class="w-20 border border-2 dis-flex-center rounded rounded-4">
+                        <div class="w-100 dis-flex-center font-s-4 mdi mdi-image-broken location-image p-2"></div>
+                        <div class="w-100 dis-flex-center p-1"><b class="translate direction-words" data-dict="steak_food">Steak and fast food</b></div>
+                        <div class="w-100 dis-flex-center p-1 translate" data-dict="Queens_NY_USA">Queens, NY, USA</div>
+                    </div>
+                    <div class="w-20 border border-2 dis-flex-center rounded rounded-4">
+                        <div class="w-100 dis-flex-center font-s-4 mdi mdi-image-broken location-image p-2"></div>
+                        <div class="w-100 dis-flex-center p-1"><b class="translate direction-words" data-dict="french_fry_restaurant">French Fry Restaurant</b></div>
+                        <div class="w-100 dis-flex-center p-1 translate" data-dict="Queens_NY_USA">Queens, NY, USA</div>
+                    </div>
+                    <div class="w-20 border border-2 dis-flex-center rounded rounded-4">
+                        <div class="w-100 dis-flex-center font-s-4 mdi mdi-image-broken location-image p-2"></div>
+                        <div class="w-100 dis-flex-center p-1"><b class="translate direction-words" data-dict="french_fry_restaurant">French Fry Restaurant</b></div>
+                        <div class="w-100 dis-flex-center p-1 translate" data-dict="Queens_NY_USA">Queens, NY, USA</div>
+                    </div>
+
+                </div>
+                <div class="w-100 dis-flex-center border-bottom border-2 p-2">
+                    <div class="w-50 d-flex justify-content-start align-items-center p-1 ">
+                        <div class="font-s-1 translate direction-words" data-dict="rest_desc">
+                            Restaurant Description
+                        </div>
+                    </div>
+                    <div class="w-50 d-flex justify-content-end align-items-center ">
+                        <div class="font-s-3 w-20 border rounded rounded-5 p-1 dis-flex-center translate direction-words" data-dict="view_all">
+                            view all
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 d-flex justify-content-start align-items-center p-3 ">
+                    <div class="w-100 d-flex justify-content-end align-items-center flex-column border rounded rounded-4 p-3">
+                        <div class="w-100 d-flex justify-content-around align-items-center border-bottom border-2">
+                            <div class="w-10 mdi mdi-store font-s-1 dis-flex-center ">
+                                
+                            </div>
+                            <div class="w-90 ">
+                                <div class="font-s-2 p-2 translate direction-words" data-dict="french_fry_restaurant"><b>French Fry Restaurant</b></div>
+                                <div class="font-s-2 d-flex justify-content-center align-items-center " >
+                                    <div class="w-25 p-2 d-flex justify-content-start align-items-center"><p class="text-secondary translate direction" data-dict="place">Place:</p><p>Bronx</p></div>
+                                    <div class="w-25 p-2 d-flex justify-content-start align-items-center"><p class="text-secondary translate direction" data-dict="road">Road:</p><p>16 th Road</p></div>
+                                    <div class="w-25 p-2 d-flex justify-content-start align-items-center"><p class="text-secondary translate direction" data-dict="mail">Mail:</p><p>french@gmail.com</p></div>
+                                    <div class="w-25 p-2 d-flex justify-content-start align-items-center"><p class="text-secondary translate direction" data-dict="phone">Phone:</p><p>2343232342343</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 d-flex justify-content-around align-content-center p-2">
+                            <div class="w-20 d-flex justify-content-start align-items-center rounded rounded-4 flex-column">
+                                    <p class="text-secondary w-100 m-0 p-1 translate direction-words" data-dict="area">Area</p>
+                                    <p class="text-secondary p-1 m-0 w-100"><b>1200 SQ FT</b></p>
+                                    
+                            </div>
+                            <div class="w-20 d-flex justify-content-start align-items-center rounded rounded-4 flex-column">
+                                    <p class="text-secondary w-100 m-0 p-1 translate direction-words" data-dict="total_employee">Total Employee</p>                                   
+                                    <p class="text-secondary p-1 m-0 w-100"><b>12.00</b></p>
+                                    
+                            </div>
+                            <div class="w-20 d-flex justify-content-start align-items-center rounded rounded-4 flex-column">
+                                    <p class="text-secondary w-100 m-0 p-1 translate direction-words" data-dict="opening_time">Opening time</p>                                   
+                                    <p class="text-secondary p-1 m-0 w-100"><b>8.00 AM</b></p>
+                                    
+                            </div>
+                            <div class="w-20 d-flex justify-content-start align-items-center rounded rounded-4 flex-column">
+                                    <p class="text-secondary w-100 m-0 p-1 translate direction-words" data-dict="closing_time">Closing time</p>                                   
+                                    <p class="text-secondary p-1 m-0 w-100"><b>12.00 AM</b></p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row w-100">
+                    <div class="col w-50">
+                        <div class="w-100 dis-flex-center p-2">
+                            <div class="w-50 d-flex justify-content-start align-items-center p-1 ">
+                                <div class="font-s-1 translate direction-words" data-dict="food_menu">
+                                    Food Menu
+                                </div>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end align-items-center ">
+                                <div class="font-s-3 w-50 border rounded rounded-5 p-1 dis-flex-center translate direction-words" data-dict="view_all">
+                                    view all
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 d-flex justify-content-start align-items-center p-3 ">
+                            <div class="w-100 d-flex justify-content-end align-items-center flex-column border rounded rounded-4 p-3">
+                                <div class="w-100 d-flex justify-content-around align-items-center border-bottom border-2">
+                                    <div class="translate direction-words" data-dict="food_name">
+                                        Food Name
+                                    </div>
+                                    <div class="translate direction-words" data-dict="fotal_item">
+                                        total item
+                                    </div>
+                                    <div class="translate direction-words" data-dict="total_sale">
+                                        Total sale
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-around align-content-center p-2">
+                                    <div class="d-flex justify-content-around align-content-center flex-row">
+                                        <div class="mdi mdi-pizza font-s-1 p-1"></div>
+                                        <div class="dis-flex-center flex-column">
+                                            <div class="translate direction-words" data-dict="pizza">
+                                                Pizza
+                                            </div>
+                                            <div class="">
+                                                fasdf
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dis-flex-center">
+                                        12 k PC
+                                    </div>
+                                    <div class="dis-flex-center">
+                                        $ 12.23k
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-around align-content-center p-2">
+                                    <div class="d-flex justify-content-around align-content-center flex-row">
+                                        <div class="mdi mdi-food font-s-1 p-1"></div>
+                                        <div class="dis-flex-center flex-column">
+                                            <div class="translate direction-words" data-dict="sushi">
+                                                Sushi
+                                            </div>
+                                            <div class="">
+                                                asfsd
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dis-flex-center">
+                                        11.2 k PC
+                                    </div>
+                                    <div class="dis-flex-center">
+                                        $ 13.32k
+                                    </div>
+                                </div> 
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="col w-50">
+                        <div class="w-100 dis-flex-center p-2">
+                            <div class="w-50 d-flex justify-content-start align-items-center p-1 ">
+                                <div class="font-s-1 translate direction-words" data-dict="food_menu">
+                                    Food Menu
+                                </div>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end align-items-center ">
+                                <div class="font-s-3 w-50 border rounded rounded-5 p-1 dis-flex-center translate direction-words" data-dict="view_all">
+                                    view all
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 d-flex justify-content-start align-items-center p-3 ">
+                            <div class="w-100 d-flex justify-content-end align-items-center flex-column border rounded rounded-4 p-3">
+                                <div class="w-100 d-flex justify-content-around align-items-center border-bottom border-2">
+                                    <div class="translate direction-words" data-dict="product_name">
+                                        Product name
+                                    </div>
+                                    <div class="translate direction-words" data-dict="import_day">
+                                        Import day
+                                    </div>
+       
+                                </div>
+                                <div class="w-100 d-flex justify-content-around align-content-center p-2">
+                                    <div class="d-flex justify-content-around align-content-center flex-row">
+                                        <div class="mdi mdi-pizza font-s-1 p-1"></div>
+                                        <div class="dis-flex-center flex-column">
+                                            <div class="">
+                                                <b class="translate direction-words" data-dict="smart_chair">Smart chair</b>
+                                            </div>
+                                            <div class="">
+                                                fasdf
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dis-flex-center">
+                                        16 jan, 2022
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-around align-content-center p-2">
+                                    <div class="d-flex justify-content-around align-content-center flex-row">
+                                        <div class="mdi mdi-food font-s-1 p-1"></div>
+                                        <div class="dis-flex-center flex-column">
+                                            <div class="">
+                                                <b class="translate direction-words" data-dict="printer">Printer</b>
+                                            </div>
+                                            <div class="">
+                                                2 Pc
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dis-flex-center ">
+                                        20 April, 22
+                                    </div>
+
+                                </div> 
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 border border-2 p-4">
+                <div class="">
+                    asdfsdf
+                </div>
+                <div class="">
+                    asdfs
+                </div>
+            </div>
         </div>
     </div>
     
 
 </body>
 
-<script src="../JS/multiLanguage.js">
-
-</script>
+<script src="../JS/multiLanguage.js"></script>
+<script src="../JS/dictionary.js"></script>
+<script src="../../assets/utils.js"></script>
 </html>
