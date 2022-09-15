@@ -93,34 +93,27 @@ var translate = (lang) => {
         word = elem[i].getAttribute('data-dict')
         elem[i].innerHTML = that[lang]['dictionary'][word];
     }
+    
+    direction_change(lang);
+}
 
 
+
+var direction_change = (lang) => {
     for(let i=0; i< class_cells.length; i++) {
         if(that[lang]['type'] === 'rtl'){
-            if(class_cells[i].classList.contains('flex-row')){
-                replaceClasses(class_cells[i], 'flex-row', 'flex-row-reverse');
-                replaceClasses(class_cells[i], 'direction-ltr', 'direction-rtl');
+            if(class_cells[i].classList.contains('direction-ltr')){
+                replaceClasses(class_cells[i],'direction-ltr', 'direction-rtl');
+                // replaceClasses(class_cells[i], 'direction-ltr', 'direction-rtl');
             }
             
-            // if(class_cells[i].classList.contains('justify-content-start')){
-            //     replaceClasses(class_cells[i], 'justify-content-start', 'justify-content-end');
-            // }
+            }else{
+            if(class_cells[i].classList.contains('direction-rtl')){
+                replaceClasses(class_cells[i],'direction-rtl', 'direction-ltr');
+                // replaceClasses(class_cells[i], 'direction-rtl', 'direction-ltr');
 
-            // if(class_cells[i].classList.contains('flex-column')){
-            //     replaceClasses(class_cells[i], 'flex-column', 'flex-column-reverse');
-            // }
-        }else{
-            if(class_cells[i].classList.contains('flex-row-reverse')){
-                replaceClasses(class_cells[i],'flex-row-reverse', 'flex-row' );
-                replaceClasses(class_cells[i], 'direction-rtl', 'direction-ltr');
-                // if(class_cells[i].classList.contains('justify-content-start')){
-                //     replaceClasses(class_cells[i], 'justify-content-start', 'justify-content-end');
-                // }
             }
-            
-            // if(class_cells[i].classList.contains('flex-column-reverse')){
-            //     replaceClasses(class_cells[i], 'flex-column-reverse', 'flex-column');
-            // }            
+         
         }
     }
 
@@ -134,8 +127,9 @@ var translate = (lang) => {
           
         }
     }
-    
 }
+
+
 
 const ku = byId('ku');
 const en = byId('en');
