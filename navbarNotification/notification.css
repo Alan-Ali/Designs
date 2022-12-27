@@ -1,0 +1,50 @@
+@import url(../assets/bootstrap_mix/bootstrap_5_2_2/css/bootstrap.css);
+@import url(../assets/fontawesome/css/fontawesome.css);
+@import url(../assets/fontawesome/css/solid.css);
+@import url(../assets/fontawesome/css/brands.css);
+
+#notif-button {
+    /*position: absolute;*/
+    width: 45px;
+    height: 40px;
+    font-size: 20px;
+
+}
+
+
+#notif-button:active,
+#notif-button:hover {
+    border: 0px;
+    outline: 0px;
+}
+
+
+
+#notificationNumber {
+    position: absolute;
+    top: 7px;
+    right: -17px;
+}
+
+
+
+#listOfNotifications {
+    border: 1px #868686 solid;
+    position: absolute;
+    top: 150%;
+    width: 400px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 250ms top, 250ms opacity, 250ms max-height;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.notification-list li {
+    width: 100%;
+    display: block;
+    margin: 0;
+
+    list-style: none;
+}

@@ -1,0 +1,69 @@
+/* 
+t = text 
+dec = decoration
+col = color 
+
+*/
+
+.t-dec-dashed{
+    text-decoration:dashed; 
+}
+
+.t-dec-dotted{
+    text-decoration:dotted;
+}
+
+.t-dec-double {
+    text-decoration:double ;
+}
+
+.t-dec-line-through {
+    text-decoration:line-through ;
+}
+.t-dec-none {
+    text-decoration:none ;
+}
+.t-dec-overline {
+    text-decoration:overline ;
+}
+
+.t-dec-solid {
+    text-decoration:solid ;
+}
+
+.t-dec-underline {
+    text-decoration:underline ;
+}
+
+.t-dec-wavy {
+    text-decoration:wavy ;
+}
+
+
+
+
+
+.t-col-main-green:active{
+    color: rgb(49, 133, 156);
+}
+
+.t-col-main-soft-yellow:active {
+    color:rgb(255, 242, 204);
+}
+
+.t-col-main-yellow:active {
+    color:rgb(191, 144, 0);
+}
+
+.t-col-main-white:active {
+    color:rgb(242, 242, 242);
+}
+
+.t-col-main-grey:active {
+    color:rgb(89, 89, 89);
+}
+
+
+
+
+

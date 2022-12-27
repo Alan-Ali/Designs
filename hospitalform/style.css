@@ -1,0 +1,56 @@
+/* Styles go here */
+
+.page-header,
+.page-header-space {
+    height: 150px;
+    /* padding: 5px */
+}
+
+.page-footer,
+.page-footer-space {
+    height: 100px;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.page-header {
+    position: fixed;
+    top: 0mm;
+    width: 100%;
+    z-index: 10;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+.page {
+    page-break-after: always;
+}
+
+
+@media print {
+    @page {
+        margin: 0;
+        padding: 0;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tfoot {
+        display: table-footer-group;
+    }
+
+    body {
+        margin: 0;
+    }
+}

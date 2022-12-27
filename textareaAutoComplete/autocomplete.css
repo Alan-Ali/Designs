@@ -1,0 +1,40 @@
+#textarea {
+    width: 300px;
+    height: auto;
+    outline: none !important;
+    resize: both !important;
+    overflow: auto;
+}
+
+#object {
+    transition: 250ms top, 250ms left, 250ms display;
+    max-width: 150px;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #00B089;
+
+}
+
+
+.recommended {
+    /* background-color: #00B089; */
+    border: 1px solid #00B089;
+    border: none;
+    color: black;
+
+}
+
+.recommended:hover,
+.recommended:active,
+.recommended:focus {
+    /* border: none !important; */
+    background-color: #00B089;
+    border: 1px solid #00B089;
+    outline: 0 !important;
+    box-shadow: none !important;
+    ;
+}

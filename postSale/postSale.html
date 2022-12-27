@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap_mix/bootstrap_5_2_2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./postSale.css">
+    <title>Document</title>
+</head>
+
+<body class="container-fluid vh-100 d-flex justify-content-center align-items-center ">
+    <div class="post-sale-container border rounded rounded-3">
+        <div
+            class="bg-secondary mx-0 p-0 m-0 post-sale-title border-0 rounded rounded-5 d-flex justify-content-center align-items-center">
+            POSTSALE
+        </div>
+        <div class="row mx-0 p-0 m-0 mt-3 ">
+            <div class="col-9 ps-4 pt-3 p-2">
+                <input class="form-control p-3" type="text" placeholder="Patient's Name..."
+                    aria-label=".form-control-lg example">
+            </div>
+            <div class="col-3 pt-3 p-2 d-flex justify-content-evenly justify-content-center ">
+                <div class="w-100 h-100 d-flex justify-content-evenly align-items-center ">
+                    <button class="patients-buttons btn btn-danger fa-solid fa-minus p-2 rounded rounded-5">
+
+                    </button>
+                    <button class="patients-buttons btn btn-success fa-solid fa-plus p-2 rounded rounded-5">
+
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0 p-0 m-0 mt-3 ">
+            <div class="col-9 ps-4 p-2">
+                <input class="form-control p-3" type="text" placeholder="Drug Name..."
+                    aria-label=".form-control-lg example">
+                <div class="list-container-sales  row mt-3">
+                    <table class="w-100 border border-1">
+                        <thead class=" rounded-bottom ">
+                            <tr class=" overflow-hidden rounded-bottom">
+                                <th class="p-2">Name</th>
+                                <th class="p-2">Batch</th>
+                                <th class="p-2">Unit</th>
+                                <th class="p-2">Quantity</th>
+                                <th class="p-2">Price</th>
+                                <th class="p-2">Total</th>
+                                <th class="p-2">Expire</th>
+                                <th class="p-2">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="h-50-px border-bottom">
+                                <td class="p-2 ">name</td>
+                                <td class="p-2 ">
+                                    <select class="form-select p-2  rounded rounded-1" aria-label="number">
+                                        <option selected>number</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </td>
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="text" value="0">
+                                </td>
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="text" value="0">
+                                </td>
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="text" value="0">
+                                </td>
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="text" value="0" disabled>
+                                </td>
+
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="date" value="0" disabled>
+                                </td>
+                                <td class="p-2 border position-relative">
+                                    <button
+                                        class="list-buttons dis-flex-center btn btn-danger fa-solid fa-trash p-2 rounded rounded-5">
+
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="h-50-px border-bottom">
+                                <td class="p-2 ">name</td>
+                                <td class="p-2 ">
+                                    <select class="form-select p-2  rounded rounded-1" aria-label="number">
+                                        <option selected>number</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </td>
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="text" value="0">
+                                </td>
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="text" value="0">
+                                </td>
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="text" value="0">
+                                </td>
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="text" value="0" disabled>
+                                </td>
+
+                                <td class="p-2 ">
+                                    <input class="form-control p-2  rounded rounded-1 " type="date" value="0" disabled>
+                                </td>
+                                <td class="p-2 border position-relative">
+                                    <button
+                                        class="list-buttons dis-flex-center btn btn-danger fa-solid fa-trash p-2 rounded rounded-5">
+
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+            <div class="col-3 p-2 pe-3">
+                <textarea class="form-control p-3 " rows="10" placeholder="Notes..."></textarea>
+            </div>
+        </div>
+
+        <div class="row mx-0 p-0 m-0 mt-3 ">
+            <div class=" col-9 ps-4 p-2 ">
+                <div class="money-types h- border rounded">
+                    <div class="money-container rounded-top rounded-3 ">
+                        <div class="btn fs-3 dis-flex-center  h-50-px rounded rounded-3 color5000">
+                            5000 IQD
+                        </div>
+                        <div class="btn fs-3 dis-flex-center  h-50-px rounded rounded-3 color10000">
+                            10000 IQD
+                        </div>
+                        <div class="btn fs-3 dis-flex-center  h-50-px rounded rounded-3 color50">
+                            50 $
+                        </div>
+
+                        <div class="btn fs-3 dis-flex-center  h-50-px rounded rounded-3 color50000">
+                            50000 IQD
+                        </div>
+                        <div class="btn fs-3 dis-flex-center  h-50-px rounded rounded-3 color25000">
+                            25000 IQD
+                        </div>
+
+                        <div class="btn fs-3 dis-flex-center  h-50-px rounded rounded-3 color100">
+                            100 $
+                        </div>
+
+                    </div>
+
+                    <div class="row   rounded-bottom rest-container">
+                        <div class="mt-2 ps-2">
+                            <lable id="" class="w-100 p-1 text-all-screen-sizes-7 rounded-top ">Rest</lable>
+                            <input type="text"
+                                class="form-control rounded-0 p-2 rounded rounded-3 text-all-screen-sizes-7" value="0"
+                                disabled>
+                        </div>
+                        <div class="mt-2 ps-3">
+                            <lable id="" class="w-100 p-1 text-all-screen-sizes-7 rounded-top ">Total</lable>
+                            <input type="text"
+                                class="form-control rounded-0 p-2 rounded rounded-3 text-all-screen-sizes-7" value="0"
+                                disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-2 pe-3">
+                <div class="price-container rounded rounded-3 border">
+                    <div class="mt-1 p-2">
+                        <lable id="" class="w-100 p-1 text-all-screen-sizes-7 rounded-top ">Total Price</lable>
+                        <input type="text" class="form-control rounded-0 p-2 rounded rounded-3 text-all-screen-sizes-7"
+                            value="0" disabled>
+                    </div>
+                    <div class="mt-1 p-2">
+                        <lable id="" class="w-100 p-1 text-all-screen-sizes-7 rounded-top ">Discount</lable>
+                        <input type="text" class="form-control rounded-0 p-2 rounded rounded-3 text-all-screen-sizes-7"
+                            value="0" disabled>
+                    </div>
+                    <div class="mt-2 p-2">
+                        <button type="button" class="add border-0 w-100 btn btn-primary fs-2">Add </button>
+                    </div>
+                    <div class="mt-2 p-2">
+                        <button type="button" class="add-print border-0 w-100 btn btn-success fs-2">Add + print</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row border border-2 mx-0 p-0 m-0">
+            asdf
+        </div> -->
+    </div>
+</body>
+
+</html>

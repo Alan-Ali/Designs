@@ -1,0 +1,49 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./notification.css">
+
+</head>
+
+<body>
+    <nav class="navbar mx-0 m-0 p-0 d-flex justify-content-around align-items-center" id="navbarTop"
+        style="height: 70px">
+        <div class="col-sm-8 p-0 m-0 mx-0 d-flex justify-content-around align-items-center">
+            <p class="fs-2 text-light d-flex justify-content-center align-items-center m-0">Total Patients: 3</p>
+            <p class="fs-2 text-light d-flex justify-content-center align-items-center m-0">Completed : 2</p>
+            <p class="fs-2 text-light d-flex justify-content-center align-items-center m-0">Pending : 34</p>
+        </div>
+        <div class="col-sm-1 p-0 m-0 mx-0 position-relative text-end d-flex justify-content-end align-items-center">
+            <button type="button" id="notif-button" class="btn btn-primary rounded rounded-5 m-0 fa-solid fa-bell"
+                data-switch="off">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                </span>
+            </button>
+            <ul class="row border mx-0 p-0 m-0 listOfNotifications" id="listOfNotifications">
+                <li class="row btn btn-outline-success border-0 rounded-0 mx-0 m-0 p-0 border-bottom  ">
+                    <div class="row mx-0 m-0 p-1 ps-2 ">
+                        <div class="col fs-4 d-flex justify-content-start align-items-center ">Patient's name
+                        </div>
+                        <!-- <div class="col fa-solid fa-bell d-flex justify-content-center align-items-center ">
+                        </div> -->
+                    </div>
+                    <div class="row m-0 p-1 ps-2 ">
+                        <div class="col d-flex justify-content-start align-items-center">Doctor's name</div>
+                        <div class="col">2/2/2022 10:20 PM</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
+<script src="notification.js"></script>

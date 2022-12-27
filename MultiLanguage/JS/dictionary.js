@@ -27,6 +27,8 @@ const langs = {
             import_day:"Import Day",
             smart_chair:"Smart Chair",
             printer:"Printer",
+            something: "something",
+            search: "search"
         }
     },
     "ku":{
@@ -57,6 +59,8 @@ const langs = {
             import_day:"ڕۆژی ناردن",
             smart_chair:"کورسی زیرەک",
             printer:"پرینتەر",
+            something: "شتێک",
+            search: "گەڕان"
         }
     },
     // ar:{

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hospitlaForm.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+    <!-- <link rel="stylesheet" href="../assets/bootstrap_mix/bootstrap_5_2_2/css/bootstrap.min.css"> -->
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: janna;
+            src: url(./fonts/UniversNextArabic-Regular.ttf);
+        }
+
+        .header {
+            /* height: 14% !important; */
+            position: relative;
+            height: 150px;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .header img {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+
+        }
+
+        .header .header-title {
+            position: absolute;
+            top: 4px;
+            right: 5px;
+            z-index: 5;
+            width: 280px;
+            height: 40px;
+            font-family: janna, sans-serif;
+            /* background-color: rebeccapurple; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 34px;
+
+        }
+
+        .header .header-info {
+            position: absolute;
+            top: 60px;
+            right: 3px;
+            z-index: 5;
+            width: 500px;
+            height: 40px;
+            padding: 0;
+            padding-right: 18px;
+            font-family: janna, sans-serif;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+
+        }
+
+        .footer {
+            height: 100px;
+            position: relative;
+            width: 100%;
+            font-family: janna, sans-serif;
+
+        }
+
+        .footer img {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer .footer-right {
+            position: absolute;
+            top: 6px;
+            right: 3px;
+            z-index: 5;
+            width: 320px;
+            height: 95px;
+            padding: 0;
+            padding-right: 18px;
+            /* background-color: gray; */
+            font-family: janna, sans-serif;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+
+        }
+
+        .footer .footer-left-up,
+        .footer .footer-left-down {
+            position: absolute;
+            z-index: 5;
+            padding: 0;
+            padding-right: 18px;
+            font-family: janna, sans-serif;
+            display: flex;
+
+            align-items: center;
+            /* color: white; */
+            font-weight: bold;
+
+
+        }
+
+        .footer .footer-left-up {
+            top: 0px;
+            left: 3px;
+            color: black;
+            /* background-color: gray; */
+            justify-content: flex-start;
+            width: 430px;
+            height: 30px;
+            font-size: 12px;
+        }
+
+        .footer .footer-left-down {
+            top: 33px;
+            left: 3px;
+            color: white;
+            /* background-color: white; */
+            justify-content: flex-end;
+            width: 320px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+        .section {
+            position: relative;
+
+
+        }
+
+        .section img {
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%) !important;
+        }
+
+        body {
+            height: 100vh;
+            background-image: url(./images/ibticar-background.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 60%;
+            page-break-after: always;
+        }
+
+
+        @media print {
+            @page {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+
+            }
+
+
+            table {
+                page-break-after: auto !important
+            }
+
+            tr {
+                page-break-inside: avoid !important;
+                page-break-after: auto !important;
+            }
+
+            td {
+                page-break-inside: avoid !important;
+                page-break-after: auto !important;
+            }
+
+            tbody {
+                page-break-inside: avoid !important;
+                page-break-after: always !important;
+
+            }
+
+            thead {
+                display: table-header-group !important;
+                page-break-after: auto !important;
+            }
+
+            tfoot {
+                display: table-footer-group !important;
+                page-break-after: auto !important;
+            }
+
+            #spacer {
+                height: 8.3em;
+            }
+
+            /* height of footer + a little extra */
+            #footer {
+                position: fixed;
+                bottom: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="container-fluid overflow-hidden mx-0 p-0 m-0 d-table">
+    <table class="report-container w-100 h-100-per">
+        <thead class="report-header w-100">
+            <tr>
+                <th class="report-header-cell">
+                    <div class="header">
+                        <img src="./images/al_ibtkar_header.jpg" alt="">
+                        <div class="header-title">
+                            مختبر ابتکار الربيعي
+                        </div>
+                        <div class="header-info">
+                            دکتوراەاحیاء مجهرية نهایة نعمة حسين - ماجستير کيمياء حياتية سريرية ريا کمال محمد صالح
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tfoot class="report-footer">
+            <tr>
+                <td id="spacer" class="report-footer-cell">
+
+                </td>
+            </tr>
+        </tfoot>
+        <tbody class="report-content">
+            <tr class="w-100">
+                <td class="border ">
+
+                    <div class="section">
+                        <div class=" mx-0 m-0 p-0  ">
+                            <!-- <hr> -->
+                            <div class="dis-flex-center-start p-0 mx-0 m-0 ">
+                                <div class="col-7 mx-0 dis-flex-center-start m-0 p-0 ps-2 ">
+                                    <div class="col-4 font-size-3 text-primary dis-flex-center mx-0 m-0 p-2">Pt.Name:
+                                    </div>
+                                    <div class="col-8 font-size-3 ps-2 p-2 m-0 mx-0">Abdulla Rasul Qadr</div>
+                                </div>
+                                <div class="col-5 p-0 m-0 mx-0 dis-flex-center ">
+                                    <div class="col- mx-0 dis-flex-center-end m-0 p-0 ">
+                                        <div class="col- font-size-3 text-primary dis-flex-center m-0 p-0">Ref.By:</div>
+                                        <div class="col- font-size-3 ps-2 p-0 m-0">Lab Rawa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 m-0 dis-flex-center-between p-1 ">
+                                <div class="col-3 mx-0 dis-flex-center-start m-0 p-0 ">
+                                    <div class=" font-size-3 text-primary dis-flex-center  p-2">Pt.Code:</div>
+                                    <div class=" font-size-3 ps-2 p-2 ">Lab Rawa</div>
+                                </div>
+
+                                <div class="col-3 mx-0 dis-flex-center m-0 p-0 ">
+                                    <div class=" font-size-3 text-primary dis-flex-center  p-2">Age:</div>
+                                    <div class=" font-size-3 ps-2 p-02">Lab Rawa</div>
+                                </div>
+
+                                <div class="col-3 mx-0 dis-flex-center m-0 p-0 ">
+                                    <div class=" font-size-3 text-primary dis-flex-center  p-2">Gender:</div>
+                                    <div class=" font-size-3 ps-2 p-2 ">Lab Rawa</div>
+                                </div>
+
+                                <div class="col-3 mx-0 dis-flex-center-end m-0 p-0 ">
+                                    <div class=" font-size-3 text-primary dis-flex-center  p-2">Date:</div>
+                                    <div class=" font-size-3 ps-2 p-2 ">Lab Rawa</div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="w-100 mt-3 mb-3">
+                            <tr class="border">
+                                <th colspan="4">
+                                    <div class="row m-0 mx-0 font-size-5 dis-flex-center bluish-bg text-light ">
+                                        <b class="dis-flex-center">Hormones</b>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="p-2 bg-black border text-light">Tests</td>
+                                <td style="text-align: center" class="p-2 bg-black border text-light">Value</td>
+                                <td style="text-align: center" class="p-2 bg-black border text-light">Unit</td>
+                                <td style="text-align: center" class="p-2 bg-black border text-light">Normal Range</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="p-2 text-light border">
+
+                                    <div class="dis-flex-center flex-column m-0  font-size-2">
+                                        <p class="m-0 p-0 text-dark">TPSA</p>
+                                        <p class="m-0 p-0 font-something light-grey">Cobas E411-Chemiluminescent</p>
+                                    </div>
+                                </td>
+                                <td style="text-align: center" class="p-2 text-light border"></td>
+                                <td style="text-align: center" class="p-2 text-light border"></td>
+                                <td style="text-align: center" class="p-2 text-light border">
+                                    <div class=" dis-flex-center flex-column m-0 font-size-2 text-dark">
+                                        <p class="p-0 m-0">40 years: 0.57 - 1.40</p>
+                                        <p class="p-0 m-0">40-49 years: 0.59 - 2.0</p>
+                                        <p class="p-0 m-0">50-59 years: 0.81 - 3.89</p>
+                                        <p class="p-0 m-0">60-69 years: 0.95 - 5.40</p>
+                                        <p class="p-0 m-0">>= 70 years: 1.11 - 6.22</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="w-100 mt-3 mb-3">
+                            <tr class="border">
+                                <th colspan="4">
+                                    <div class="row m-0 mx-0 font-size-5 dis-flex-center bluish-bg text-light ">
+                                        <b class="dis-flex-center">Biochemistry</b>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="p-2 bg-black border text-light">Tests</td>
+                                <td style="text-align: center" class="p-2 bg-black border text-light">Value</td>
+                                <td style="text-align: center" class="p-2 bg-black border text-light">Unit</td>
+                                <td style="text-align: center" class="p-2 bg-black border text-light">Normal Range</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="p-2 text-light border">
+
+                                    <div class="dis-flex-center flex-column m-0  font-size-2">
+                                        <p class="m-0 p-0 text-dark">TPSA</p>
+                                        <p class="m-0 p-0 font-something light-grey">Cobas E411-Chemiluminescent</p>
+                                    </div>
+                                </td>
+                                <td style="text-align: center" class="p-2 text-light border">3.65</td>
+                                <td style="text-align: center" class="p-2 text-light border">%</td>
+                                <td style="text-align: center" class="p-2 text-light border">
+                                    <div class=" dis-flex-center flex-column m-0 font-size-2 text-dark">
+                                        <p class="p-0 m-0">Normal: = Below 5.7%</p>
+                                        <p class="p-0 m-0">Prediabetes: 5.7% to 6.4%</p>
+                                        <p class="p-0 m-0">Diabetes: = 6.5 or greater</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="p-2 text-light border">
+
+                                    <div class="dis-flex-center flex-column m-0  font-size-2">
+                                        <p class="m-0 p-0 text-dark">TPSA</p>
+                                        <p class="m-0 p-0 font-something light-grey">Cobas E411-Chemiluminescent</p>
+                                    </div>
+                                </td>
+                                <td style="text-align: center" class="p-2 text-light border">3.65</td>
+                                <td style="text-align: center" class="p-2 text-light border">%</td>
+                                <td style="text-align: center" class="p-2 text-light border">
+                                    <div class=" dis-flex-center flex-column m-0 font-size-2 text-dark">
+                                        <p class="p-0 m-0">Male:</p>
+                                        <br>
+                                        <p style="display: block;" class="p-0 m-0">1-3 months: 0.2-0.75</p>
+                                        <p class="p-0 m-0">3-6 months: 0.3-0.7</p>
+                                        <p class="p-0 m-0">6-12 months: 0.2-0.7</p>
+                                        <p class="p-0 m-0">1-3 years: 0.2-0.8</p>
+                                        <p class="p-0 m-0">4-10 years: 0.3-0.8</p>
+                                        <p class="p-0 m-0">11-15 years: 0.5-1.0</p>
+                                        <p class="p-0 m-0">16-20 years: 0.6-1.2</p>
+                                        <p class="p-0 m-0">>20 years: 0.7-1.2</p>
+                                        <p class="p-0 m-0">Female:</p>
+                                        <p class="p-0 m-0">1-3 months: 0.3-0.6</p>
+                                        <p class="p-0 m-0">3-6 months: 0.3-0.6</p>
+                                        <p class="p-0 m-0">6-12 months: 0.2-0.75</p>
+                                        <p class="p-0 m-0">1-3 years: 0.2-0.8</p>
+                                        <p class="p-0 m-0">4-10 years: 0.35-0.75</p>
+                                        <p class="p-0 m-0">11-15 years: 0.5-0.95</p>
+                                        <p class="p-0 m-0">16-20 years: 0.6-1.0</p>
+                                        <p class="p-0 m-0">>20 years: 0.5-0.9</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="p-2 text-light border">
+
+                                    <div class="dis-flex-center font-size-2">
+                                        <p class="">TPSA</p>
+                                        <p class="font-something">Cobas E411-Chemiluminescent</p>
+                                    </div>
+                                </td>
+                                <td style="text-align: center" class="">3.65</td>
+                                <td style="text-align: center" class="">mg/dl</td>
+                                <td style="text-align: center" class="">
+                                    <div class=" dis-flex-center  font-size-2 ">
+                                        <p class="">13 - 50</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div id="footer">
+        <div class="footer">
+            <img src="./images/al_ibtkar_footer.jpg" alt="">
+            <div class="footer-right" dir="rtl">
+                <div class="">
+                    <div class="fa-solid fa-location-dot"></div>
+                    <div class="pe-3">بغداد - شارع الربيعي - مقابل خطار سنتر</div>
+                </div>
+                <div class="">
+                    <div class="fa-solid fa-phone"></div>
+                    <div class="pe-3 " dir="ltr">0440 3433234</div>
+                </div>
+            </div>
+            <div class="footer-left-up ">
+                المختبر مجاز من قبل وزارة الصحة و خاضع لنضام السيطرة النوعیة القیاسي
+            </div>
+            <div class="footer-left-down ">
+                <div class="">
+                    <div class="fa-brands fa-instagram dis-flex-center "></div>
+                    <div class="ps-2 dis-flex-center ">
+                        ebtkar_labs
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="fa-brands fa-facebook dis-flex-center "></div>
+                    <div class="ps-2 dis-flex-center ">
+                        مختبر البتکار الطبي
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

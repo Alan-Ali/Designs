@@ -1,0 +1,66 @@
+@import "./auto.css";
+@import "./background.css";
+@import "./border.css";
+@import "./display.css";
+@import "./font.css";
+@import "./height.css";
+@import "./margin.css";
+@import "./padding.css";
+@import "./width.css";
+@import "./boxShadow.css";
+@import "./button.css";
+@import "./scrollBar.css";
+@import "./transform.css";
+@import "./input.css";
+@import "./position.css";
+@import "./animation&transition.css";
+@import "./text.css";
+@import "./other.css";
+@import "./svgs.scss";
+/* @import "./.css"; */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:'Times New Roman', Times, serif; */
+    font-family: 'Calibri', sans-serif;
+}
+
+body {
+    background-color: rgb(89, 89, 89);
+}
+
+.container {
+    width: 100%;
+}
+
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-cell {
+    cursor: cell;
+}
+
+.cursor-col-resize {
+    cursor: col-resize;
+}
+
+
+.of-hidden {
+    overflow: hidden;
+}
+
+.outline-none {
+    outline: none;
+}
+
+
+
+
+

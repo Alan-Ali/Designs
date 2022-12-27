@@ -1,0 +1,22 @@
+@media print {
+    @page {
+        size: 80mm 80mm;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dis-flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .smart-logo- {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cust-font-size {
+        font-size: 10px;
+    }
+}

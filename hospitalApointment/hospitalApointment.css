@@ -1,0 +1,53 @@
+@import url(./hospitlaForm.css);
+@import url(../assets/bootstrap_mix/bootstrap_5_2_2/css/bootstrap.min.css);
+@import url(../assets/fontawesome/css/all.css);
+
+
+
+:root {
+    --primarycolor: #372753;
+    --secondarycolor: #ceb44f;
+}
+
+.chevron-buttons:hover {
+    color: rgb(255, 254, 166) !important;
+}
+
+.bg-green {
+    background-color: #3F9469;
+}
+
+.text-green {
+    color: #3F9469;
+}
+
+.bg-blue {
+    background-color: rgb(107, 179, 173);
+}
+
+.text-grey-black {
+    background-color: rgb(56, 56, 56);
+}
+
+.bg-test {
+    background-color: rgb(56, 56, 56);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+.patient-details {
+    transition: 250ms background-color;
+}
+
+.patient-details:hover {
+    background-color: #f0f0f0 !important;
+    /* color: white; */
+    border: 0;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 0px) {
+    .dis-grid-250-px {
+        grid-template-columns: repeat(auto-fit, 10%);
+    }
+}

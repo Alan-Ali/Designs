@@ -1,0 +1,63 @@
+:root {
+
+    --priamry: #1e90ff;
+    /* --primary-frist-der: #234233; */
+    /* --primary-second-der: #234233; */
+    
+    --secondary: #ffffff;
+    /* --secondary-frist-der: #234233; */
+    /* --secondary-second-der: #234233; */
+
+    --tertiary: #343243;
+    /* --tertiary-frist-der: #234233; */
+    /* --tertiary-second-der: #234233; */
+
+}
+
+
+.cust-bg-primary{
+    background-color: ;
+}
+
+.cust-bg-secondary{
+    background-color: ;
+}
+
+.cust-bg-tertiary{
+    background-color: ;
+}
+
+
+.cust-b-primary{
+    border-color: ;
+}
+
+.cust-b-secondary{
+    border-color: ;
+}
+
+.cust-b-tertiary{
+    border-color: ;
+}
+
+
+.cust-text-primary{
+    color: ;
+}
+
+.cust-text-secondary{
+    color: ;
+}
+
+.cust-text-tertiary{
+    color: ;
+}
+
+
+
+
+
+
+
+
+
